@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99EF6AC0-14D0-424A-89FF-D5CEEA90E5CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>INNOexample</RootNamespace>
+    <AssemblyName>INNOexample</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\.Output\Debug\INNOexample\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\.Output\Release\INNOexample\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BooxColorPattern.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="_INNO">
+      <HintPath>_INNO\_INNO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01. Data\_Global.cs" />
+    <Compile Include="01. Data\_INNO\InnoNetTcpTestDeviceClient.cs" />
+    <Compile Include="01. Data\_INNO\InnoNetTcpTestClient.cs" />
+    <Compile Include="01. Data\_INNO\InnoNetTcpTestServer.cs" />
+    <Compile Include="10. Custom\CustomCellManagerIni.cs" />
+    <Compile Include="10. Custom\CustomIni.cs" />
+    <Compile Include="10. Custom\CustomFormVirtual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10. Custom\CustomFormVirtual.Designer.cs">
+      <DependentUpon>CustomFormVirtual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10. Custom\CustomShapeViewer_Draw.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="10. Custom\Custom_Extensions.cs" />
+    <Compile Include="10. Custom\CustomCodeTrackerIni.cs" />
+    <Compile Include="10. Custom\CustomShapeMap.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="10. Custom\InnoTcpClientSample.cs" />
+    <Compile Include="10. Custom\InnoTcpServerSample.cs" />
+    <Compile Include="11. Device\DevIFLightController.cs" />
+    <Compile Include="11. Device\DevRadianQBio_Indicator.cs" />
+    <Compile Include="30. Form\Form_99_BusinessCostCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_99_BusinessCostCalculator.Designer.cs">
+      <DependentUpon>Form_99_BusinessCostCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_99_VATCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_99_VATCalculator.Designer.cs">
+      <DependentUpon>Form_99_VATCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_99_NaverEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_99_NaverEmail.Designer.cs">
+      <DependentUpon>Form_99_NaverEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_04_File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_04_File.Designer.cs">
+      <DependentUpon>Form_04_File.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_15_Time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_15_Time.Designer.cs">
+      <DependentUpon>Form_15_Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_02_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_02_Data.Designer.cs">
+      <DependentUpon>Form_02_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_05_Lang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_05_Lang.Designer.cs">
+      <DependentUpon>Form_05_Lang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_03_Dev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_03_Dev.Designer.cs">
+      <DependentUpon>Form_03_Dev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_06_Machine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_06_Machine.Designer.cs">
+      <DependentUpon>Form_06_Machine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_07_Math.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_07_Math.Designer.cs">
+      <DependentUpon>Form_07_Math.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_08_Media.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_08_Media.Designer.cs">
+      <DependentUpon>Form_08_Media.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_09_Net.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_09_Net.Designer.cs">
+      <DependentUpon>Form_09_Net.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_10_Pattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_10_Pattern.Designer.cs">
+      <DependentUpon>Form_10_Pattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_11_Security.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_11_Security.Designer.cs">
+      <DependentUpon>Form_11_Security.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_14_Thread.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_14_Thread.Designer.cs">
+      <DependentUpon>Form_14_Thread.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_17_UI_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_17_UI_Form.Designer.cs">
+      <DependentUpon>Form_17_UI_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_INNO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_INNO.Designer.cs">
+      <DependentUpon>Form_INNO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_Information.Designer.cs">
+      <DependentUpon>Form_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_12_Shape.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_12_Shape.Designer.cs">
+      <DependentUpon>Form_12_Shape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_01_Crypt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_01_Crypt.Designer.cs">
+      <DependentUpon>Form_01_Crypt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_TcpSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_TcpSample.Designer.cs">
+      <DependentUpon>Form_TcpSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_13_System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_13_System.Designer.cs">
+      <DependentUpon>Form_13_System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_16_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_16_UI.Designer.cs">
+      <DependentUpon>Form_16_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_99_ColorPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_99_ColorPicker.Designer.cs">
+      <DependentUpon>Form_99_ColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="30. Form\Form_00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30. Form\Form_00.Designer.cs">
+      <DependentUpon>Form_00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Blank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Blank.Designer.cs">
+      <DependentUpon>Form_Blank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="10. Custom\CustomFormVirtual.resx">
+      <DependentUpon>CustomFormVirtual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_99_BusinessCostCalculator.resx">
+      <DependentUpon>Form_99_BusinessCostCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_99_VATCalculator.resx">
+      <DependentUpon>Form_99_VATCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_99_NaverEmail.resx">
+      <DependentUpon>Form_99_NaverEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_04_File.resx">
+      <DependentUpon>Form_04_File.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_15_Time.resx">
+      <DependentUpon>Form_15_Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_02_Data.resx">
+      <DependentUpon>Form_02_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_05_Lang.resx">
+      <DependentUpon>Form_05_Lang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_03_Dev.resx">
+      <DependentUpon>Form_03_Dev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_06_Machine.resx">
+      <DependentUpon>Form_06_Machine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_07_Math.resx">
+      <DependentUpon>Form_07_Math.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_08_Media.resx">
+      <DependentUpon>Form_08_Media.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_09_Net.resx">
+      <DependentUpon>Form_09_Net.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_10_Pattern.resx">
+      <DependentUpon>Form_10_Pattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_11_Security.resx">
+      <DependentUpon>Form_11_Security.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_14_Thread.resx">
+      <DependentUpon>Form_14_Thread.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_17_UI_Form.resx">
+      <DependentUpon>Form_17_UI_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_INNO.resx">
+      <DependentUpon>Form_INNO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_Information.resx">
+      <DependentUpon>Form_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_12_Shape.resx">
+      <DependentUpon>Form_12_Shape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_01_Crypt.resx">
+      <DependentUpon>Form_01_Crypt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_TcpSample.resx">
+      <DependentUpon>Form_TcpSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_13_System.resx">
+      <DependentUpon>Form_13_System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_16_UI.resx">
+      <DependentUpon>Form_16_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_99_ColorPicker.resx">
+      <DependentUpon>Form_99_ColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30. Form\Form_00.resx">
+      <DependentUpon>Form_00.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Blank.resx">
+      <DependentUpon>Form_Blank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_OUTPUT\_Data\Cost_HBT_VisionSetup.ini" />
+    <None Include="_OUTPUT\_Data\Cost_HBT_CRP.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\home_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\home_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\menu_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\menu_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\form_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\form_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\home-heart_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\home-heart_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\bug_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\bug_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\calendar-clock_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\calendar-clock_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\camera-enhance_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\camera-enhance_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\gamepad-square_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\gamepad-square_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\head-lightbulb_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\head-lightbulb_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\help-box_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\help-box_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\information_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\information_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\ladybug_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\ladybug_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\notebook_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\notebook_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\star_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\star_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\cog_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MaterialDesignIcons\cog_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BooxColorPattern.ico" />
+    <None Include="Resources\star_24_white.png" />
+    <None Include="Resources\star_24_black.png" />
+    <None Include="Resources\notebook_24_white.png" />
+    <None Include="Resources\notebook_24_black.png" />
+    <None Include="Resources\menu_24_white.png" />
+    <None Include="Resources\menu_24_black.png" />
+    <None Include="Resources\ladybug_24_white.png" />
+    <None Include="Resources\ladybug_24_black.png" />
+    <None Include="Resources\information_24_white.png" />
+    <None Include="Resources\information_24_black.png" />
+    <None Include="Resources\home-heart_24_white.png" />
+    <None Include="Resources\home-heart_24_black.png" />
+    <None Include="Resources\home_24_white.png" />
+    <None Include="Resources\home_24_black.png" />
+    <None Include="Resources\help-box_24_white.png" />
+    <None Include="Resources\help-box_24_black.png" />
+    <None Include="Resources\head-lightbulb_24_white.png" />
+    <None Include="Resources\head-lightbulb_24_black.png" />
+    <None Include="Resources\gamepad-square_24_white.png" />
+    <None Include="Resources\gamepad-square_24_black.png" />
+    <None Include="Resources\form_24_white.png" />
+    <None Include="Resources\form_24_black.png" />
+    <None Include="Resources\cog_24_white.png" />
+    <None Include="Resources\cog_24_black.png" />
+    <None Include="Resources\camera-enhance_24_white.png" />
+    <None Include="Resources\camera-enhance_24_black.png" />
+    <None Include="Resources\calendar-clock_24_white.png" />
+    <None Include="Resources\calendar-clock_24_black.png" />
+    <None Include="Resources\bug_24_white.png" />
+    <None Include="Resources\bug_24_black.png" />
+    <None Include="Resources\account-cog_24_black.png" />
+    <None Include="Resources\BOOX_Logo_White.png" />
+    <None Include="Resources\BOOX_Logo_Blue.png" />
+    <None Include="Resources\BOOX_Logo_Black.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rem // _OUTPUT 폴더 복사
+echo .
+echo ----------------------------------------------------------------------------------------------------
+echo -- _OUTPUT 폴더 복사 시작 !!!
+echo ----------------------------------------------------------------------------------------------------
+if not exist "$(ProjectDir)..\.Output\$(ConfigurationName)\$(ProjectName)\_Data" (
+  xcopy "$(ProjectDir)_OUTPUT\*.*" "$(ProjectDir)..\.Output\$(ConfigurationName)\$(ProjectName)\" /e /y
+)
+echo ----------------------------------------------------------------------------------------------------
+echo -- _OUTPUT 폴더 복사 완료 !!!
+echo ----------------------------------------------------------------------------------------------------
+echo .
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

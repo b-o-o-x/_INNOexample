@@ -1,0 +1,47 @@
+##################################################
+#
+# .gitignore Template for C#
+#
+##################################################
+#
+# (주)북스 BOOX Inc. 이노소프트 Innosoft Co.
+# 대표이사 양승민 (Andy Yang)
+# - 소프트웨어 설계, 분석, 컨설팅, 교육
+# - 010-3292-3892, booxboox@naver.com
+#
+##################################################
+
+# 문서 폴더/파일
+*_Admin/
+*_Doc/
+
+# 임시 폴더/파일
+~*
+*.zip
+*.bak
+
+# 불필요한 프로젝트의 폴더/파일
+.vs/
+obj/
+**/[Pp]ackages/*
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sdf
+*.exe
+*.pdb
+*.ldb
+
+# 버그 폴더
+
+# 빌드결과물
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+.Output/
+
+!.gitignore
