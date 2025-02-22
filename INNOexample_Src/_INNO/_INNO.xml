@@ -12160,7 +12160,7 @@
             <code>
             디버깅 = [Debug Mode]
             등록됨 = [Registered]
-            임시 1시간 = [임시(60:00)] - 남은시간표시
+            임시 3시간 = [임시(3:00:00)] - 남은시간표시
             임시 만료 = [Unregistered]
             </code>
             </summary>
