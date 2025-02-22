@@ -47,10 +47,23 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="$(DefineConstants.Contains('_INNO_DEBUG_'))">
+      <ItemGroup>
     <Reference Include="_INNO">
+          <HintPath>..\..\_INNO_FULL\.Output\Debug\_INNO.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="_INNO">
       <HintPath>_INNO\_INNO.dll</HintPath>
     </Reference>
   </ItemGroup>
+    </Otherwise>
+  </Choose>
   <ItemGroup>
     <Compile Include="01. Data\_Global.cs" />
     <Compile Include="01. Data\_INNO\InnoNetTcpTestDeviceClient.cs" />
