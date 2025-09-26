@@ -54,7 +54,7 @@ namespace INNOexample
             _InnoFile._GetFileList();
             _InnoFile._CreateDirectory(@".\_Test");
             _InnoFile._DeleteDirectory(@".\_Test");
-            _InnoFile._CopyDirectory(@".\Test", @".\Test2");
+            _InnoFile._CopyDirectory(@".\Data", @".\Data_Copied");
             _InnoFile._GetRunningPath();
             _InnoFile._GetRunningPathFileName();
             _InnoFile._GetWorkingPath();

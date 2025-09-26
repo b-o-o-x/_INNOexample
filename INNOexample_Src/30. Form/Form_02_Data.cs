@@ -734,9 +734,9 @@ namespace INNOexample
         {
             public string Name = "Innosoft";
             protected string Phone = "010-3292-3892";
-            private string Email = "booxboox@naver.com";
+            //private string Email = "booxboox@naver.com";
             public string Homepage = "http://innosoft.kr";
-            static string _Test = "Hello World!";
+            //static string _Test = "Hello World!";
         }
 
         private void btnInnoClassFieldInfo_Pro_Click(object sender, EventArgs e)

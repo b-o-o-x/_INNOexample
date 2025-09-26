@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_99_NaverEmail));
             this.label1 = new System.Windows.Forms.Label();
             this.txtTo = new _INNO._UI.InnoTextBoxColoredPlaceholder();
-            this.btnSend = new _INNO._UI.InnoButtonColored();
+            this.btnSend = new _INNO._UI.InnoModernButtonRound();
             this.lbAttachments = new System.Windows.Forms.ListBox();
             this.txtCc = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@
             this.txtSubject = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBody = new _INNO._UI.InnoTextBoxColoredPlaceholder();
-            this.innoUIButtonColored1 = new _INNO._UI.InnoButtonColored();
+            this.innoUIButtonColored1 = new _INNO._UI.InnoModernButtonRound();
             this.txtFromName = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.label5 = new System.Windows.Forms.Label();
             this.txtFrom = new _INNO._UI.InnoTextBoxColoredPlaceholder();
@@ -68,7 +68,7 @@
             this.txtTo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTo.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtTo.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtTo.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtTo.BorderRadius = 7;
             this.txtTo.BorderSize = 2;
@@ -91,25 +91,25 @@
             // btnSend
             // 
             this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSend.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnSend.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnSend.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSend.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSend.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnSend.BackColor_Normal = System.Drawing.Color.Gainsboro;
+            this.btnSend.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnSend.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnSend.BorderRadius = 0;
-            this.btnSend.BorderSize = 0;
-            this.btnSend.CheckBoxType = false;
+            this.btnSend.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnSend.Checked = false;
-            this.btnSend.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnSend.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnSend.CheckedForeColor = System.Drawing.Color.White;
-            this.btnSend.FlatAppearance.BorderSize = 0;
+            this.btnSend.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSend.FlatAppearance.BorderSize = 2;
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSend.ForeColor = System.Drawing.Color.White;
+            this.btnSend.ForeColor = System.Drawing.Color.Black;
+            this.btnSend.ForeColor_Checked = System.Drawing.Color.White;
+            this.btnSend.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnSend.Location = new System.Drawing.Point(651, 557);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(136, 31);
             this.btnSend.TabIndex = 15;
             this.btnSend.Text = "SEND";
-            this.btnSend.TextColor = System.Drawing.Color.White;
             this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
@@ -129,7 +129,7 @@
             this.txtCc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCc.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtCc.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtCc.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtCc.BorderRadius = 7;
             this.txtCc.BorderSize = 2;
@@ -166,7 +166,7 @@
             this.txtBcc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBcc.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBcc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtBcc.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtBcc.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtBcc.BorderRadius = 7;
             this.txtBcc.BorderSize = 2;
@@ -203,7 +203,7 @@
             this.txtSubject.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSubject.BackColor = System.Drawing.SystemColors.Window;
-            this.txtSubject.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtSubject.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtSubject.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtSubject.BorderRadius = 7;
             this.txtSubject.BorderSize = 2;
@@ -241,7 +241,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBody.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBody.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtBody.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtBody.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtBody.BorderRadius = 7;
             this.txtBody.BorderSize = 2;
@@ -264,25 +264,25 @@
             // innoUIButtonColored1
             // 
             this.innoUIButtonColored1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.innoUIButtonColored1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.innoUIButtonColored1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.innoUIButtonColored1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.innoUIButtonColored1.BackColor = System.Drawing.Color.Gainsboro;
+            this.innoUIButtonColored1.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.innoUIButtonColored1.BackColor_Normal = System.Drawing.Color.Gainsboro;
+            this.innoUIButtonColored1.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.innoUIButtonColored1.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.innoUIButtonColored1.BorderRadius = 0;
-            this.innoUIButtonColored1.BorderSize = 0;
-            this.innoUIButtonColored1.CheckBoxType = false;
+            this.innoUIButtonColored1.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.innoUIButtonColored1.Checked = false;
-            this.innoUIButtonColored1.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.innoUIButtonColored1.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.innoUIButtonColored1.CheckedForeColor = System.Drawing.Color.White;
+            this.innoUIButtonColored1.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.innoUIButtonColored1.FlatAppearance.BorderSize = 0;
             this.innoUIButtonColored1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.innoUIButtonColored1.ForeColor = System.Drawing.Color.White;
+            this.innoUIButtonColored1.ForeColor = System.Drawing.Color.Black;
+            this.innoUIButtonColored1.ForeColor_Checked = System.Drawing.Color.White;
+            this.innoUIButtonColored1.ForeColor_Normal = System.Drawing.Color.Black;
             this.innoUIButtonColored1.Location = new System.Drawing.Point(651, 142);
             this.innoUIButtonColored1.Name = "innoUIButtonColored1";
             this.innoUIButtonColored1.Size = new System.Drawing.Size(136, 32);
             this.innoUIButtonColored1.TabIndex = 15;
             this.innoUIButtonColored1.Text = "파일 첨부 ...";
-            this.innoUIButtonColored1.TextColor = System.Drawing.Color.White;
             this.innoUIButtonColored1.UseVisualStyleBackColor = false;
             this.innoUIButtonColored1.Click += new System.EventHandler(this.btnSend_Click);
             // 
@@ -290,7 +290,7 @@
             // 
             this.txtFromName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFromName.BackColor = System.Drawing.SystemColors.Window;
-            this.txtFromName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtFromName.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtFromName.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtFromName.BorderRadius = 7;
             this.txtFromName.BorderSize = 2;
@@ -326,7 +326,7 @@
             // txtFrom
             // 
             this.txtFrom.BackColor = System.Drawing.SystemColors.Window;
-            this.txtFrom.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtFrom.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtFrom.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtFrom.BorderRadius = 7;
             this.txtFrom.BorderSize = 2;
@@ -362,7 +362,7 @@
             // 
             this.txtNaverPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtNaverPassword.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNaverPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtNaverPassword.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtNaverPassword.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtNaverPassword.BorderRadius = 7;
             this.txtNaverPassword.BorderSize = 2;
@@ -399,7 +399,7 @@
             // 
             this.txtToName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtToName.BackColor = System.Drawing.SystemColors.Window;
-            this.txtToName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtToName.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtToName.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtToName.BorderRadius = 7;
             this.txtToName.BorderSize = 2;
@@ -469,7 +469,7 @@
 
         private System.Windows.Forms.Label label1;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtTo;
-        private _INNO._UI.InnoButtonColored btnSend;
+        private _INNO._UI.InnoModernButtonRound btnSend;
         private System.Windows.Forms.ListBox lbAttachments;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtCc;
         private System.Windows.Forms.Label label2;
@@ -478,7 +478,7 @@
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtSubject;
         private System.Windows.Forms.Label label4;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtBody;
-        private _INNO._UI.InnoButtonColored innoUIButtonColored1;
+        private _INNO._UI.InnoModernButtonRound innoUIButtonColored1;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtFromName;
         private System.Windows.Forms.Label label5;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtFrom;

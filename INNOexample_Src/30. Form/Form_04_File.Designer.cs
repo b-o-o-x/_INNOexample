@@ -50,15 +50,19 @@
             // btnInnoCsv
             // 
             this.btnInnoCsv.BackColor = System.Drawing.Color.White;
+            this.btnInnoCsv.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoCsv.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoCsv.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoCsv.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoCsv.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoCsv.Checked = false;
-            this.btnInnoCsv.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoCsv.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoCsv.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoCsv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoCsv.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoCsv.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoCsv.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoCsv.Location = new System.Drawing.Point(3, 95);
             this.btnInnoCsv.Name = "btnInnoCsv";
-            this.btnInnoCsv.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoCsv.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoCsv.Size = new System.Drawing.Size(110, 40);
             this.btnInnoCsv.TabIndex = 0;
             this.btnInnoCsv.Text = "InnoCsv";
@@ -68,15 +72,19 @@
             // btnCustomIni
             // 
             this.btnCustomIni.BackColor = System.Drawing.Color.White;
+            this.btnCustomIni.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCustomIni.BackColor_Normal = System.Drawing.Color.White;
+            this.btnCustomIni.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnCustomIni.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnCustomIni.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCustomIni.Checked = false;
-            this.btnCustomIni.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCustomIni.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCustomIni.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnCustomIni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomIni.ForeColor = System.Drawing.Color.Black;
+            this.btnCustomIni.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnCustomIni.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnCustomIni.Location = new System.Drawing.Point(119, 49);
             this.btnCustomIni.Name = "btnCustomIni";
-            this.btnCustomIni.NormalBackColor = System.Drawing.Color.White;
-            this.btnCustomIni.NormalForeColor = System.Drawing.Color.Black;
             this.btnCustomIni.Size = new System.Drawing.Size(110, 40);
             this.btnCustomIni.TabIndex = 0;
             this.btnCustomIni.Text = "CustomIni";
@@ -86,15 +94,19 @@
             // btnInnoIni_Pro
             // 
             this.btnInnoIni_Pro.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInnoIni_Pro.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoIni_Pro.BackColor_Normal = System.Drawing.Color.DodgerBlue;
+            this.btnInnoIni_Pro.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoIni_Pro.BorderColor_Normal = System.Drawing.Color.WhiteSmoke;
             this.btnInnoIni_Pro.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoIni_Pro.Checked = false;
-            this.btnInnoIni_Pro.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoIni_Pro.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoIni_Pro.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoIni_Pro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoIni_Pro.ForeColor = System.Drawing.Color.Yellow;
+            this.btnInnoIni_Pro.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoIni_Pro.ForeColor_Normal = System.Drawing.Color.Yellow;
             this.btnInnoIni_Pro.Location = new System.Drawing.Point(329, 49);
             this.btnInnoIni_Pro.Name = "btnInnoIni_Pro";
-            this.btnInnoIni_Pro.NormalBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoIni_Pro.NormalForeColor = System.Drawing.Color.Yellow;
             this.btnInnoIni_Pro.Size = new System.Drawing.Size(110, 40);
             this.btnInnoIni_Pro.TabIndex = 0;
             this.btnInnoIni_Pro.Text = "InnoIni";
@@ -104,15 +116,19 @@
             // btnInnoIni
             // 
             this.btnInnoIni.BackColor = System.Drawing.Color.White;
+            this.btnInnoIni.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoIni.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoIni.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoIni.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoIni.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoIni.Checked = false;
-            this.btnInnoIni.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoIni.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoIni.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoIni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoIni.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoIni.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoIni.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoIni.Location = new System.Drawing.Point(3, 49);
             this.btnInnoIni.Name = "btnInnoIni";
-            this.btnInnoIni.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoIni.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoIni.Size = new System.Drawing.Size(110, 40);
             this.btnInnoIni.TabIndex = 0;
             this.btnInnoIni.Text = "InnoIni";
@@ -154,15 +170,19 @@
             // btnInnoLogThread
             // 
             this.btnInnoLogThread.BackColor = System.Drawing.Color.Tomato;
+            this.btnInnoLogThread.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoLogThread.BackColor_Normal = System.Drawing.Color.Tomato;
+            this.btnInnoLogThread.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoLogThread.BorderColor_Normal = System.Drawing.Color.WhiteSmoke;
             this.btnInnoLogThread.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoLogThread.Checked = false;
-            this.btnInnoLogThread.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoLogThread.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoLogThread.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoLogThread.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoLogThread.ForeColor = System.Drawing.Color.Yellow;
+            this.btnInnoLogThread.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoLogThread.ForeColor_Normal = System.Drawing.Color.Yellow;
             this.btnInnoLogThread.Location = new System.Drawing.Point(329, 141);
             this.btnInnoLogThread.Name = "btnInnoLogThread";
-            this.btnInnoLogThread.NormalBackColor = System.Drawing.Color.Tomato;
-            this.btnInnoLogThread.NormalForeColor = System.Drawing.Color.Yellow;
             this.btnInnoLogThread.Size = new System.Drawing.Size(110, 40);
             this.btnInnoLogThread.TabIndex = 0;
             this.btnInnoLogThread.Text = "InnoLogThread (Pro)";
@@ -172,15 +192,19 @@
             // btnInnoLogManager
             // 
             this.btnInnoLogManager.BackColor = System.Drawing.Color.White;
+            this.btnInnoLogManager.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoLogManager.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoLogManager.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoLogManager.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoLogManager.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoLogManager.Checked = false;
-            this.btnInnoLogManager.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoLogManager.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoLogManager.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoLogManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoLogManager.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoLogManager.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoLogManager.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoLogManager.Location = new System.Drawing.Point(119, 141);
             this.btnInnoLogManager.Name = "btnInnoLogManager";
-            this.btnInnoLogManager.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoLogManager.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoLogManager.Size = new System.Drawing.Size(110, 40);
             this.btnInnoLogManager.TabIndex = 0;
             this.btnInnoLogManager.Text = "InnoLogManager";
@@ -190,15 +214,19 @@
             // btnInnoZip
             // 
             this.btnInnoZip.BackColor = System.Drawing.Color.White;
+            this.btnInnoZip.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoZip.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoZip.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoZip.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoZip.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoZip.Checked = false;
-            this.btnInnoZip.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoZip.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoZip.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoZip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoZip.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoZip.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoZip.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoZip.Location = new System.Drawing.Point(3, 233);
             this.btnInnoZip.Name = "btnInnoZip";
-            this.btnInnoZip.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoZip.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoZip.Size = new System.Drawing.Size(110, 40);
             this.btnInnoZip.TabIndex = 0;
             this.btnInnoZip.Text = "InnoZip";
@@ -208,15 +236,19 @@
             // btnInnoXml
             // 
             this.btnInnoXml.BackColor = System.Drawing.Color.White;
+            this.btnInnoXml.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoXml.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoXml.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoXml.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoXml.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoXml.Checked = false;
-            this.btnInnoXml.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoXml.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoXml.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoXml.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoXml.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoXml.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoXml.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoXml.Location = new System.Drawing.Point(3, 187);
             this.btnInnoXml.Name = "btnInnoXml";
-            this.btnInnoXml.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoXml.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoXml.Size = new System.Drawing.Size(110, 40);
             this.btnInnoXml.TabIndex = 0;
             this.btnInnoXml.Text = "InnoXml";
@@ -226,15 +258,19 @@
             // btnInnoLog
             // 
             this.btnInnoLog.BackColor = System.Drawing.Color.White;
+            this.btnInnoLog.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoLog.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoLog.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoLog.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoLog.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoLog.Checked = false;
-            this.btnInnoLog.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoLog.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoLog.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoLog.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoLog.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoLog.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoLog.Location = new System.Drawing.Point(3, 141);
             this.btnInnoLog.Name = "btnInnoLog";
-            this.btnInnoLog.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoLog.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoLog.Size = new System.Drawing.Size(110, 40);
             this.btnInnoLog.TabIndex = 0;
             this.btnInnoLog.Text = "InnoLog";
@@ -244,15 +280,19 @@
             // btn_InnoFile
             // 
             this.btn_InnoFile.BackColor = System.Drawing.Color.White;
+            this.btn_InnoFile.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btn_InnoFile.BackColor_Normal = System.Drawing.Color.White;
+            this.btn_InnoFile.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btn_InnoFile.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoFile.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btn_InnoFile.Checked = false;
-            this.btn_InnoFile.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_InnoFile.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoFile.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_InnoFile.ForeColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoFile.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoFile.ForeColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoFile.Location = new System.Drawing.Point(3, 3);
             this.btn_InnoFile.Name = "btn_InnoFile";
-            this.btn_InnoFile.NormalBackColor = System.Drawing.Color.White;
-            this.btn_InnoFile.NormalForeColor = System.Drawing.Color.IndianRed;
             this.btn_InnoFile.Size = new System.Drawing.Size(110, 40);
             this.btn_InnoFile.TabIndex = 0;
             this.btn_InnoFile.Text = "_InnoFile";

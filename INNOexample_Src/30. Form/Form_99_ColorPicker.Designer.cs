@@ -50,7 +50,7 @@
             // 
             // innoGroupBoxBorder2
             // 
-            this.innoGroupBoxBorder2.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder2.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder2.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder2.BorderWidth = 2;
             this.innoGroupBoxBorder2.Controls.Add(this.label5);
@@ -75,7 +75,7 @@
             // txtColorRGB
             // 
             this.txtColorRGB.BackColor = System.Drawing.SystemColors.Window;
-            this.txtColorRGB.BorderColor = System.Drawing.Color.Lime;
+            this.txtColorRGB.BorderColor_Normal = System.Drawing.Color.Lime;
             this.txtColorRGB.BorderFocusColor = System.Drawing.Color.Black;
             this.txtColorRGB.BorderRadius = 7;
             this.txtColorRGB.BorderSize = 2;
@@ -98,7 +98,7 @@
             // 
             // innoGroupBoxBorder1
             // 
-            this.innoGroupBoxBorder1.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder1.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder1.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder1.BorderWidth = 2;
             this.innoGroupBoxBorder1.Controls.Add(this.label1);
@@ -130,7 +130,7 @@
             // txtB
             // 
             this.txtB.BackColor = System.Drawing.SystemColors.Window;
-            this.txtB.BorderColor = System.Drawing.Color.Blue;
+            this.txtB.BorderColor_Normal = System.Drawing.Color.Blue;
             this.txtB.BorderFocusColor = System.Drawing.Color.Black;
             this.txtB.BorderRadius = 7;
             this.txtB.BorderSize = 2;
@@ -163,7 +163,7 @@
             // txtG
             // 
             this.txtG.BackColor = System.Drawing.SystemColors.Window;
-            this.txtG.BorderColor = System.Drawing.Color.Green;
+            this.txtG.BorderColor_Normal = System.Drawing.Color.Green;
             this.txtG.BorderFocusColor = System.Drawing.Color.Black;
             this.txtG.BorderRadius = 7;
             this.txtG.BorderSize = 2;
@@ -197,7 +197,7 @@
             // txtR
             // 
             this.txtR.BackColor = System.Drawing.SystemColors.Window;
-            this.txtR.BorderColor = System.Drawing.Color.Red;
+            this.txtR.BorderColor_Normal = System.Drawing.Color.Red;
             this.txtR.BorderFocusColor = System.Drawing.Color.Black;
             this.txtR.BorderRadius = 7;
             this.txtR.BorderSize = 2;
@@ -241,7 +241,7 @@
             // txtA
             // 
             this.txtA.BackColor = System.Drawing.SystemColors.Window;
-            this.txtA.BorderColor = System.Drawing.Color.Transparent;
+            this.txtA.BorderColor_Normal = System.Drawing.Color.Transparent;
             this.txtA.BorderFocusColor = System.Drawing.Color.Yellow;
             this.txtA.BorderRadius = 7;
             this.txtA.BorderSize = 2;

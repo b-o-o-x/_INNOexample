@@ -33,15 +33,15 @@
             this.timerRefresh = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.innoUIButtonEllipsed1 = new _INNO._UI.InnoButtonEllipsed();
+            this.innoUIButtonEllipsed1 = new _INNO._UI.InnoModernButtonEllipse();
             this.innoUIButton1 = new _INNO._UI.InnoButton();
             this.innoUIButtonArrayPanel1 = new _INNO._UI.InnoFlowLayoutPanelButtonArray();
-            this.innoUIRoundedButton1 = new _INNO._UI.InnoButtonRounded();
+            this.innoUIRoundedButton1 = new _INNO._UI.InnoModernButtonRound();
             this.panel2 = new System.Windows.Forms.Panel();
             this.innoUIRoundLabel1 = new _INNO._UI.InnoLabelRounded();
             this.innoUITextBox1 = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.innoUICheckBox1 = new _INNO._UI.InnoCheckBox(this.components);
-            this.innoUIToggleButton1 = new _INNO._UI.InnoToggleButton();
+            this.innoUIToggleButton1 = new _INNO._UI.InnoModernToggle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.innoUIButton2 = new _INNO._UI.InnoButton();
             this.innoUIButton6 = new _INNO._UI.InnoButton();
@@ -61,8 +61,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnShowNotifyBox = new _INNO._UI.InnoButtonRounded();
-            this.btnShowMsgBox = new _INNO._UI.InnoButtonRounded();
+            this.btnShowNotifyBox = new _INNO._UI.InnoModernButtonRound();
+            this.btnShowMsgBox = new _INNO._UI.InnoModernButtonRound();
             this.innoUIEllipseControl1 = new _INNO._UI.InnoControlRounded();
             this.sc = new System.Windows.Forms.SplitContainer();
             this.lbLog = new System.Windows.Forms.ListBox();
@@ -129,10 +129,19 @@
             // 
             // innoUIButtonEllipsed1
             // 
-            this.innoUIButtonEllipsed1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.innoUIButtonEllipsed1.FlatAppearance.BorderSize = 0;
+            this.innoUIButtonEllipsed1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.innoUIButtonEllipsed1.BackColor_Checked = System.Drawing.Color.DeepSkyBlue;
+            this.innoUIButtonEllipsed1.BackColor_Normal = System.Drawing.Color.DeepSkyBlue;
+            this.innoUIButtonEllipsed1.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.innoUIButtonEllipsed1.BorderColor_Normal = System.Drawing.Color.PowderBlue;
+            this.innoUIButtonEllipsed1.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
+            this.innoUIButtonEllipsed1.Checked = false;
+            this.innoUIButtonEllipsed1.FlatAppearance.BorderColor = System.Drawing.Color.PowderBlue;
+            this.innoUIButtonEllipsed1.FlatAppearance.BorderSize = 2;
             this.innoUIButtonEllipsed1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.innoUIButtonEllipsed1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButtonEllipsed1.ForeColor = System.Drawing.Color.Black;
+            this.innoUIButtonEllipsed1.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButtonEllipsed1.ForeColor_Normal = System.Drawing.Color.Black;
             this.innoUIButtonEllipsed1.Location = new System.Drawing.Point(160, 9);
             this.innoUIButtonEllipsed1.Name = "innoUIButtonEllipsed1";
             this.innoUIButtonEllipsed1.Size = new System.Drawing.Size(86, 85);
@@ -144,16 +153,20 @@
             // innoUIButton1
             // 
             this.innoUIButton1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton1.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.innoUIButton1.BackColor_Normal = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton1.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.innoUIButton1.BorderColor_Normal = System.Drawing.Color.Silver;
             this.innoUIButton1.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.innoUIButton1.Checked = false;
-            this.innoUIButton1.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.innoUIButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.innoUIButton1.FlatAppearance.BorderSize = 0;
+            this.innoUIButton1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.innoUIButton1.FlatAppearance.BorderSize = 2;
+            this.innoUIButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.innoUIButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.innoUIButton1.ForeColor_Checked = System.Drawing.Color.White;
+            this.innoUIButton1.ForeColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.innoUIButton1.Location = new System.Drawing.Point(3, 3);
             this.innoUIButton1.Name = "innoUIButton1";
-            this.innoUIButton1.NormalBackColor = System.Drawing.Color.WhiteSmoke;
-            this.innoUIButton1.NormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.innoUIButton1.Size = new System.Drawing.Size(150, 40);
             this.innoUIButton1.TabIndex = 0;
             this.innoUIButton1.Text = "innoUIButton1";
@@ -178,25 +191,26 @@
             // 
             // innoUIRoundedButton1
             // 
-            this.innoUIRoundedButton1.ButtonColor = System.Drawing.Color.Silver;
-            this.innoUIRoundedButton1.ButtonDownColor = System.Drawing.Color.LightGreen;
-            this.innoUIRoundedButton1.ButtonHoverColor = System.Drawing.Color.Orange;
-            this.innoUIRoundedButton1.CheckBoxType = false;
+            this.innoUIRoundedButton1.BackColor = System.Drawing.Color.Gainsboro;
+            this.innoUIRoundedButton1.BackColor_Checked = System.Drawing.Color.DeepSkyBlue;
+            this.innoUIRoundedButton1.BackColor_Normal = System.Drawing.Color.Gainsboro;
+            this.innoUIRoundedButton1.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.innoUIRoundedButton1.BorderColor_Normal = System.Drawing.Color.Silver;
+            this.innoUIRoundedButton1.BorderRadius = 15;
+            this.innoUIRoundedButton1.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.innoUIRoundedButton1.Checked = false;
+            this.innoUIRoundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.innoUIRoundedButton1.FlatAppearance.BorderSize = 2;
+            this.innoUIRoundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.innoUIRoundedButton1.ForeColor = System.Drawing.Color.Black;
+            this.innoUIRoundedButton1.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.innoUIRoundedButton1.ForeColor_Normal = System.Drawing.Color.Black;
             this.innoUIRoundedButton1.Location = new System.Drawing.Point(3, 49);
             this.innoUIRoundedButton1.Name = "innoUIRoundedButton1";
-            this.innoUIRoundedButton1.RoundColor = System.Drawing.Color.DarkGray;
-            this.innoUIRoundedButton1.RoundDownColor = System.Drawing.Color.LimeGreen;
-            this.innoUIRoundedButton1.RoundHoverColor = System.Drawing.Color.LightCoral;
             this.innoUIRoundedButton1.Size = new System.Drawing.Size(150, 45);
             this.innoUIRoundedButton1.TabIndex = 10;
             this.innoUIRoundedButton1.Text = "라운드 버튼";
-            this.innoUIRoundedButton1.TextColor = System.Drawing.Color.White;
-            this.innoUIRoundedButton1.TextDownColor = System.Drawing.Color.Black;
-            this.innoUIRoundedButton1.TextHoverColor = System.Drawing.Color.White;
-            this.innoUIRoundedButton1.Thickness = 3;
-            this.innoUIRoundedButton1.UseHoverColor = true;
-            this.innoUIRoundedButton1.UseVisualStyleBackColor = true;
+            this.innoUIRoundedButton1.UseVisualStyleBackColor = false;
             this.innoUIRoundedButton1.Click += new System.EventHandler(this.innoUIRoundedButton1_Click);
             // 
             // panel2
@@ -214,7 +228,7 @@
             // innoUIRoundLabel1
             // 
             this.innoUIRoundLabel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.innoUIRoundLabel1.BorderColor = System.Drawing.Color.IndianRed;
+            this.innoUIRoundLabel1.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.innoUIRoundLabel1.BorderThickness = 2;
             this.innoUIRoundLabel1.Location = new System.Drawing.Point(6, 119);
             this.innoUIRoundLabel1.Name = "innoUIRoundLabel1";
@@ -232,7 +246,7 @@
             // innoUITextBox1
             // 
             this.innoUITextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.innoUITextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(45)))), ((int)(((byte)(11)))));
+            this.innoUITextBox1.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(45)))), ((int)(((byte)(11)))));
             this.innoUITextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
             this.innoUITextBox1.BorderRadius = 7;
             this.innoUITextBox1.BorderSize = 2;
@@ -296,15 +310,19 @@
             // innoUIButton2
             // 
             this.innoUIButton2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton2.BackColor_Checked = System.Drawing.Color.LightSkyBlue;
+            this.innoUIButton2.BackColor_Normal = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton2.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.innoUIButton2.BorderColor_Normal = System.Drawing.Color.Silver;
             this.innoUIButton2.ButtonType = _INNO._UI.InnoButton.ButtonTypes.CheckBox;
             this.innoUIButton2.Checked = false;
-            this.innoUIButton2.CheckedBackColor = System.Drawing.Color.LightSkyBlue;
-            this.innoUIButton2.CheckedForeColor = System.Drawing.Color.Black;
+            this.innoUIButton2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.innoUIButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.innoUIButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.innoUIButton2.Location = new System.Drawing.Point(8, 6);
+            this.innoUIButton2.ForeColor_Checked = System.Drawing.Color.Black;
+            this.innoUIButton2.ForeColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.innoUIButton2.Location = new System.Drawing.Point(8, 10);
             this.innoUIButton2.Name = "innoUIButton2";
-            this.innoUIButton2.NormalBackColor = System.Drawing.Color.WhiteSmoke;
-            this.innoUIButton2.NormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.innoUIButton2.Size = new System.Drawing.Size(114, 31);
             this.innoUIButton2.TabIndex = 15;
             this.innoUIButton2.Text = "버튼 체크박스";
@@ -313,15 +331,19 @@
             // innoUIButton6
             // 
             this.innoUIButton6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton6.BackColor_Checked = System.Drawing.Color.LightSkyBlue;
+            this.innoUIButton6.BackColor_Normal = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton6.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.innoUIButton6.BorderColor_Normal = System.Drawing.Color.WhiteSmoke;
             this.innoUIButton6.ButtonType = _INNO._UI.InnoButton.ButtonTypes.RadioButton;
             this.innoUIButton6.Checked = false;
-            this.innoUIButton6.CheckedBackColor = System.Drawing.Color.LightSkyBlue;
-            this.innoUIButton6.CheckedForeColor = System.Drawing.Color.Black;
+            this.innoUIButton6.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.innoUIButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.innoUIButton6.ForeColor_Checked = System.Drawing.Color.Black;
+            this.innoUIButton6.ForeColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.innoUIButton6.Location = new System.Drawing.Point(8, 120);
             this.innoUIButton6.Name = "innoUIButton6";
-            this.innoUIButton6.NormalBackColor = System.Drawing.Color.WhiteSmoke;
-            this.innoUIButton6.NormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.innoUIButton6.Size = new System.Drawing.Size(114, 31);
             this.innoUIButton6.TabIndex = 15;
             this.innoUIButton6.Text = "버튼 Radio";
@@ -330,15 +352,19 @@
             // innoUIButton5
             // 
             this.innoUIButton5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton5.BackColor_Checked = System.Drawing.Color.LightSkyBlue;
+            this.innoUIButton5.BackColor_Normal = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton5.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.innoUIButton5.BorderColor_Normal = System.Drawing.Color.Silver;
             this.innoUIButton5.ButtonType = _INNO._UI.InnoButton.ButtonTypes.RadioButton;
             this.innoUIButton5.Checked = false;
-            this.innoUIButton5.CheckedBackColor = System.Drawing.Color.LightSkyBlue;
-            this.innoUIButton5.CheckedForeColor = System.Drawing.Color.Black;
+            this.innoUIButton5.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.innoUIButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.innoUIButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.innoUIButton5.ForeColor_Checked = System.Drawing.Color.Black;
+            this.innoUIButton5.ForeColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.innoUIButton5.Location = new System.Drawing.Point(8, 84);
             this.innoUIButton5.Name = "innoUIButton5";
-            this.innoUIButton5.NormalBackColor = System.Drawing.Color.WhiteSmoke;
-            this.innoUIButton5.NormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.innoUIButton5.Size = new System.Drawing.Size(114, 31);
             this.innoUIButton5.TabIndex = 15;
             this.innoUIButton5.Text = "버튼 Radio";
@@ -347,15 +373,19 @@
             // innoUIButton4
             // 
             this.innoUIButton4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton4.BackColor_Checked = System.Drawing.Color.LightSkyBlue;
+            this.innoUIButton4.BackColor_Normal = System.Drawing.Color.WhiteSmoke;
+            this.innoUIButton4.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.innoUIButton4.BorderColor_Normal = System.Drawing.Color.Silver;
             this.innoUIButton4.ButtonType = _INNO._UI.InnoButton.ButtonTypes.RadioButton;
             this.innoUIButton4.Checked = false;
-            this.innoUIButton4.CheckedBackColor = System.Drawing.Color.LightSkyBlue;
-            this.innoUIButton4.CheckedForeColor = System.Drawing.Color.Black;
+            this.innoUIButton4.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.innoUIButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.innoUIButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.innoUIButton4.ForeColor_Checked = System.Drawing.Color.Black;
+            this.innoUIButton4.ForeColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.innoUIButton4.Location = new System.Drawing.Point(8, 47);
             this.innoUIButton4.Name = "innoUIButton4";
-            this.innoUIButton4.NormalBackColor = System.Drawing.Color.WhiteSmoke;
-            this.innoUIButton4.NormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.innoUIButton4.Size = new System.Drawing.Size(114, 31);
             this.innoUIButton4.TabIndex = 15;
             this.innoUIButton4.Text = "버튼 Radio";
@@ -526,48 +556,50 @@
             // 
             // btnShowNotifyBox
             // 
-            this.btnShowNotifyBox.ButtonColor = System.Drawing.Color.Silver;
-            this.btnShowNotifyBox.ButtonDownColor = System.Drawing.Color.LightGreen;
-            this.btnShowNotifyBox.ButtonHoverColor = System.Drawing.Color.Orange;
-            this.btnShowNotifyBox.CheckBoxType = false;
+            this.btnShowNotifyBox.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnShowNotifyBox.BackColor_Checked = System.Drawing.Color.DeepSkyBlue;
+            this.btnShowNotifyBox.BackColor_Normal = System.Drawing.Color.DeepSkyBlue;
+            this.btnShowNotifyBox.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnShowNotifyBox.BorderColor_Normal = System.Drawing.Color.Silver;
+            this.btnShowNotifyBox.BorderRadius = 15;
+            this.btnShowNotifyBox.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnShowNotifyBox.Checked = false;
+            this.btnShowNotifyBox.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnShowNotifyBox.FlatAppearance.BorderSize = 2;
+            this.btnShowNotifyBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowNotifyBox.ForeColor = System.Drawing.Color.Black;
+            this.btnShowNotifyBox.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnShowNotifyBox.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnShowNotifyBox.Location = new System.Drawing.Point(85, 6);
             this.btnShowNotifyBox.Name = "btnShowNotifyBox";
-            this.btnShowNotifyBox.RoundColor = System.Drawing.Color.DarkGray;
-            this.btnShowNotifyBox.RoundDownColor = System.Drawing.Color.LimeGreen;
-            this.btnShowNotifyBox.RoundHoverColor = System.Drawing.Color.LightCoral;
             this.btnShowNotifyBox.Size = new System.Drawing.Size(72, 45);
             this.btnShowNotifyBox.TabIndex = 10;
             this.btnShowNotifyBox.Text = "NotifyBox";
-            this.btnShowNotifyBox.TextColor = System.Drawing.Color.White;
-            this.btnShowNotifyBox.TextDownColor = System.Drawing.Color.Black;
-            this.btnShowNotifyBox.TextHoverColor = System.Drawing.Color.White;
-            this.btnShowNotifyBox.Thickness = 3;
-            this.btnShowNotifyBox.UseHoverColor = true;
-            this.btnShowNotifyBox.UseVisualStyleBackColor = true;
+            this.btnShowNotifyBox.UseVisualStyleBackColor = false;
             this.btnShowNotifyBox.Click += new System.EventHandler(this.btnShowNotifyBox_Click);
             // 
             // btnShowMsgBox
             // 
-            this.btnShowMsgBox.ButtonColor = System.Drawing.Color.Silver;
-            this.btnShowMsgBox.ButtonDownColor = System.Drawing.Color.LightGreen;
-            this.btnShowMsgBox.ButtonHoverColor = System.Drawing.Color.Orange;
-            this.btnShowMsgBox.CheckBoxType = false;
+            this.btnShowMsgBox.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnShowMsgBox.BackColor_Checked = System.Drawing.Color.DeepSkyBlue;
+            this.btnShowMsgBox.BackColor_Normal = System.Drawing.Color.DeepSkyBlue;
+            this.btnShowMsgBox.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnShowMsgBox.BorderColor_Normal = System.Drawing.Color.Silver;
+            this.btnShowMsgBox.BorderRadius = 15;
+            this.btnShowMsgBox.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnShowMsgBox.Checked = false;
+            this.btnShowMsgBox.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnShowMsgBox.FlatAppearance.BorderSize = 2;
+            this.btnShowMsgBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowMsgBox.ForeColor = System.Drawing.Color.Black;
+            this.btnShowMsgBox.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnShowMsgBox.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnShowMsgBox.Location = new System.Drawing.Point(8, 6);
             this.btnShowMsgBox.Name = "btnShowMsgBox";
-            this.btnShowMsgBox.RoundColor = System.Drawing.Color.DarkGray;
-            this.btnShowMsgBox.RoundDownColor = System.Drawing.Color.LimeGreen;
-            this.btnShowMsgBox.RoundHoverColor = System.Drawing.Color.LightCoral;
             this.btnShowMsgBox.Size = new System.Drawing.Size(72, 45);
             this.btnShowMsgBox.TabIndex = 10;
             this.btnShowMsgBox.Text = "MsgBox";
-            this.btnShowMsgBox.TextColor = System.Drawing.Color.White;
-            this.btnShowMsgBox.TextDownColor = System.Drawing.Color.Black;
-            this.btnShowMsgBox.TextHoverColor = System.Drawing.Color.White;
-            this.btnShowMsgBox.Thickness = 3;
-            this.btnShowMsgBox.UseHoverColor = true;
-            this.btnShowMsgBox.UseVisualStyleBackColor = true;
+            this.btnShowMsgBox.UseVisualStyleBackColor = false;
             this.btnShowMsgBox.Click += new System.EventHandler(this.btnShowMsgBox_Click);
             // 
             // innoUIEllipseControl1
@@ -654,8 +686,8 @@
         private _INNO._UI.InnoPanelGroupBox innoUIGroupBoxPanel1;
         private _INNO._UI.InnoPictureBoxImageArray innoUIPictureBoxImageArray1;
         private _INNO._UI.InnoProgressBarCircular innoUIProgressBarCircular1;
-        private _INNO._UI.InnoButtonRounded innoUIRoundedButton1;
-        private _INNO._UI.InnoToggleButton innoUIToggleButton1;
+        private _INNO._UI.InnoModernButtonRound innoUIRoundedButton1;
+        private _INNO._UI.InnoModernToggle innoUIToggleButton1;
         private _INNO._UI.InnoTowerLampRYG innoUITowerLampRYG1;
         private _INNO._UI.InnoPanelTransparented innoUITransparentPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -668,8 +700,8 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Timer timerRefresh;
-        private _INNO._UI.InnoButtonRounded btnShowNotifyBox;
-        private _INNO._UI.InnoButtonRounded btnShowMsgBox;
+        private _INNO._UI.InnoModernButtonRound btnShowNotifyBox;
+        private _INNO._UI.InnoModernButtonRound btnShowMsgBox;
         private _INNO._UI.InnoControlRounded innoUIEllipseControl1;
         private _INNO._UI.InnoTextBoxColoredPlaceholder innoUITextBox1;
         private _INNO._UI.InnoLabelRounded innoUIRoundLabel1;
@@ -677,7 +709,7 @@
         private _INNO._UI.InnoButton innoUIButton6;
         private _INNO._UI.InnoButton innoUIButton5;
         private _INNO._UI.InnoButton innoUIButton4;
-        private _INNO._UI.InnoButtonEllipsed innoUIButtonEllipsed1;
+        private _INNO._UI.InnoModernButtonEllipse innoUIButtonEllipsed1;
         private _INNO._UI.InnoTowerLampRYGB innoUITowerLampRYGB1;
         private System.Windows.Forms.SplitContainer sc;
         private System.Windows.Forms.ListBox lbLog;

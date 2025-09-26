@@ -35,16 +35,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTaxAmount = new _INNO._UI.InnoTextBoxColoredPlaceholder();
-            this.btnVAT_Calc1 = new _INNO._UI.InnoButtonColored();
+            this.btnVAT_Calc1 = new _INNO._UI.InnoModernButtonRound();
             this.txtValueOfSupply = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtTotalAmount = new _INNO._UI.InnoTextBoxColoredPlaceholder();
-            this.btnClear = new _INNO._UI.InnoButtonColored();
+            this.btnClear = new _INNO._UI.InnoModernButtonRound();
             this.innoGroupBoxBorder1 = new _INNO._UI.InnoGroupBoxBorder();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTaxAmount2 = new _INNO._UI.InnoTextBoxColoredPlaceholder();
-            this.btnVAT_Calc2 = new _INNO._UI.InnoButtonColored();
+            this.btnVAT_Calc2 = new _INNO._UI.InnoModernButtonRound();
             this.txtValueOfSupply2 = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtTotalAmount2 = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.innoGroupBoxBorder3 = new _INNO._UI.InnoGroupBoxBorder();
@@ -53,7 +53,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtResidentTax = new _INNO._UI.InnoTextBoxColoredPlaceholder();
-            this.btnBusinessIncome_Calc1 = new _INNO._UI.InnoButtonColored();
+            this.btnBusinessIncome_Calc1 = new _INNO._UI.InnoModernButtonRound();
             this.txtPayment = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtIncomeTax = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtBusinessIncome = new _INNO._UI.InnoTextBoxColoredPlaceholder();
@@ -63,7 +63,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtResidentTax2 = new _INNO._UI.InnoTextBoxColoredPlaceholder();
-            this.btnBusinessIncome_Calc2 = new _INNO._UI.InnoButtonColored();
+            this.btnBusinessIncome_Calc2 = new _INNO._UI.InnoModernButtonRound();
             this.txtPayment2 = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtIncomeTax2 = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtBusinessIncome2 = new _INNO._UI.InnoTextBoxColoredPlaceholder();
@@ -86,7 +86,7 @@
             // 
             // innoGroupBoxBorder2
             // 
-            this.innoGroupBoxBorder2.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder2.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder2.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder2.BorderWidth = 2;
             this.innoGroupBoxBorder2.Controls.Add(this.label2);
@@ -137,7 +137,7 @@
             // txtTaxAmount
             // 
             this.txtTaxAmount.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTaxAmount.BorderColor = System.Drawing.Color.DarkOliveGreen;
+            this.txtTaxAmount.BorderColor_Normal = System.Drawing.Color.DarkOliveGreen;
             this.txtTaxAmount.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTaxAmount.BorderRadius = 7;
             this.txtTaxAmount.BorderSize = 2;
@@ -160,32 +160,32 @@
             // 
             // btnVAT_Calc1
             // 
-            this.btnVAT_Calc1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnVAT_Calc1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnVAT_Calc1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnVAT_Calc1.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVAT_Calc1.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnVAT_Calc1.BackColor_Normal = System.Drawing.Color.Gainsboro;
+            this.btnVAT_Calc1.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnVAT_Calc1.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnVAT_Calc1.BorderRadius = 0;
-            this.btnVAT_Calc1.BorderSize = 0;
-            this.btnVAT_Calc1.CheckBoxType = false;
+            this.btnVAT_Calc1.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnVAT_Calc1.Checked = false;
-            this.btnVAT_Calc1.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnVAT_Calc1.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnVAT_Calc1.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnVAT_Calc1.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnVAT_Calc1.FlatAppearance.BorderSize = 0;
             this.btnVAT_Calc1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVAT_Calc1.ForeColor = System.Drawing.Color.White;
+            this.btnVAT_Calc1.ForeColor = System.Drawing.Color.Black;
+            this.btnVAT_Calc1.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnVAT_Calc1.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnVAT_Calc1.Location = new System.Drawing.Point(183, 42);
             this.btnVAT_Calc1.Name = "btnVAT_Calc1";
             this.btnVAT_Calc1.Size = new System.Drawing.Size(153, 31);
             this.btnVAT_Calc1.TabIndex = 14;
             this.btnVAT_Calc1.Text = "계산하기";
-            this.btnVAT_Calc1.TextColor = System.Drawing.Color.White;
             this.btnVAT_Calc1.UseVisualStyleBackColor = false;
             this.btnVAT_Calc1.Click += new System.EventHandler(this.btnVAT_Calc1_Click);
             // 
             // txtValueOfSupply
             // 
             this.txtValueOfSupply.BackColor = System.Drawing.SystemColors.Window;
-            this.txtValueOfSupply.BorderColor = System.Drawing.Color.Red;
+            this.txtValueOfSupply.BorderColor_Normal = System.Drawing.Color.Red;
             this.txtValueOfSupply.BorderFocusColor = System.Drawing.Color.Black;
             this.txtValueOfSupply.BorderRadius = 7;
             this.txtValueOfSupply.BorderSize = 2;
@@ -209,7 +209,7 @@
             // txtTotalAmount
             // 
             this.txtTotalAmount.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTotalAmount.BorderColor = System.Drawing.Color.Lime;
+            this.txtTotalAmount.BorderColor_Normal = System.Drawing.Color.Lime;
             this.txtTotalAmount.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTotalAmount.BorderRadius = 7;
             this.txtTotalAmount.BorderSize = 2;
@@ -235,31 +235,31 @@
             // btnClear
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClear.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnClear.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnClear.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnClear.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnClear.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnClear.BackColor_Normal = System.Drawing.Color.Gainsboro;
+            this.btnClear.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnClear.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnClear.BorderRadius = 0;
-            this.btnClear.BorderSize = 0;
-            this.btnClear.CheckBoxType = false;
+            this.btnClear.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnClear.Checked = false;
-            this.btnClear.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnClear.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnClear.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnClear.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnClear.Location = new System.Drawing.Point(655, 542);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(136, 40);
             this.btnClear.TabIndex = 14;
             this.btnClear.Text = "CLEAR";
-            this.btnClear.TextColor = System.Drawing.Color.White;
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // innoGroupBoxBorder1
             // 
-            this.innoGroupBoxBorder1.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder1.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder1.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder1.BorderWidth = 2;
             this.innoGroupBoxBorder1.Controls.Add(this.label3);
@@ -310,7 +310,7 @@
             // txtTaxAmount2
             // 
             this.txtTaxAmount2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTaxAmount2.BorderColor = System.Drawing.Color.DarkOliveGreen;
+            this.txtTaxAmount2.BorderColor_Normal = System.Drawing.Color.DarkOliveGreen;
             this.txtTaxAmount2.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTaxAmount2.BorderRadius = 7;
             this.txtTaxAmount2.BorderSize = 2;
@@ -333,32 +333,32 @@
             // 
             // btnVAT_Calc2
             // 
-            this.btnVAT_Calc2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnVAT_Calc2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnVAT_Calc2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnVAT_Calc2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVAT_Calc2.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnVAT_Calc2.BackColor_Normal = System.Drawing.Color.Gainsboro;
+            this.btnVAT_Calc2.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnVAT_Calc2.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnVAT_Calc2.BorderRadius = 0;
-            this.btnVAT_Calc2.BorderSize = 0;
-            this.btnVAT_Calc2.CheckBoxType = false;
+            this.btnVAT_Calc2.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnVAT_Calc2.Checked = false;
-            this.btnVAT_Calc2.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnVAT_Calc2.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnVAT_Calc2.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnVAT_Calc2.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnVAT_Calc2.FlatAppearance.BorderSize = 0;
             this.btnVAT_Calc2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVAT_Calc2.ForeColor = System.Drawing.Color.White;
+            this.btnVAT_Calc2.ForeColor = System.Drawing.Color.Black;
+            this.btnVAT_Calc2.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnVAT_Calc2.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnVAT_Calc2.Location = new System.Drawing.Point(183, 42);
             this.btnVAT_Calc2.Name = "btnVAT_Calc2";
             this.btnVAT_Calc2.Size = new System.Drawing.Size(153, 31);
             this.btnVAT_Calc2.TabIndex = 14;
             this.btnVAT_Calc2.Text = "계산하기";
-            this.btnVAT_Calc2.TextColor = System.Drawing.Color.White;
             this.btnVAT_Calc2.UseVisualStyleBackColor = false;
             this.btnVAT_Calc2.Click += new System.EventHandler(this.btnVAT_Calc2_Click);
             // 
             // txtValueOfSupply2
             // 
             this.txtValueOfSupply2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtValueOfSupply2.BorderColor = System.Drawing.Color.Lime;
+            this.txtValueOfSupply2.BorderColor_Normal = System.Drawing.Color.Lime;
             this.txtValueOfSupply2.BorderFocusColor = System.Drawing.Color.Black;
             this.txtValueOfSupply2.BorderRadius = 7;
             this.txtValueOfSupply2.BorderSize = 2;
@@ -383,7 +383,7 @@
             // txtTotalAmount2
             // 
             this.txtTotalAmount2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTotalAmount2.BorderColor = System.Drawing.Color.Red;
+            this.txtTotalAmount2.BorderColor_Normal = System.Drawing.Color.Red;
             this.txtTotalAmount2.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTotalAmount2.BorderRadius = 7;
             this.txtTotalAmount2.BorderSize = 2;
@@ -407,7 +407,7 @@
             // 
             // innoGroupBoxBorder3
             // 
-            this.innoGroupBoxBorder3.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder3.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder3.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder3.BorderWidth = 2;
             this.innoGroupBoxBorder3.Controls.Add(this.label7);
@@ -470,7 +470,7 @@
             // txtResidentTax
             // 
             this.txtResidentTax.BackColor = System.Drawing.SystemColors.Window;
-            this.txtResidentTax.BorderColor = System.Drawing.Color.DarkOliveGreen;
+            this.txtResidentTax.BorderColor_Normal = System.Drawing.Color.DarkOliveGreen;
             this.txtResidentTax.BorderFocusColor = System.Drawing.Color.Black;
             this.txtResidentTax.BorderRadius = 7;
             this.txtResidentTax.BorderSize = 2;
@@ -493,32 +493,32 @@
             // 
             // btnBusinessIncome_Calc1
             // 
-            this.btnBusinessIncome_Calc1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnBusinessIncome_Calc1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnBusinessIncome_Calc1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBusinessIncome_Calc1.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnBusinessIncome_Calc1.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnBusinessIncome_Calc1.BackColor_Normal = System.Drawing.Color.Gainsboro;
+            this.btnBusinessIncome_Calc1.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnBusinessIncome_Calc1.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnBusinessIncome_Calc1.BorderRadius = 0;
-            this.btnBusinessIncome_Calc1.BorderSize = 0;
-            this.btnBusinessIncome_Calc1.CheckBoxType = false;
+            this.btnBusinessIncome_Calc1.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnBusinessIncome_Calc1.Checked = false;
-            this.btnBusinessIncome_Calc1.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnBusinessIncome_Calc1.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnBusinessIncome_Calc1.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBusinessIncome_Calc1.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnBusinessIncome_Calc1.FlatAppearance.BorderSize = 0;
             this.btnBusinessIncome_Calc1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBusinessIncome_Calc1.ForeColor = System.Drawing.Color.White;
+            this.btnBusinessIncome_Calc1.ForeColor = System.Drawing.Color.Black;
+            this.btnBusinessIncome_Calc1.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnBusinessIncome_Calc1.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnBusinessIncome_Calc1.Location = new System.Drawing.Point(183, 42);
             this.btnBusinessIncome_Calc1.Name = "btnBusinessIncome_Calc1";
             this.btnBusinessIncome_Calc1.Size = new System.Drawing.Size(153, 31);
             this.btnBusinessIncome_Calc1.TabIndex = 14;
             this.btnBusinessIncome_Calc1.Text = "계산하기";
-            this.btnBusinessIncome_Calc1.TextColor = System.Drawing.Color.White;
             this.btnBusinessIncome_Calc1.UseVisualStyleBackColor = false;
             this.btnBusinessIncome_Calc1.Click += new System.EventHandler(this.btnBusinessIncome_Calc1_Click);
             // 
             // txtPayment
             // 
             this.txtPayment.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPayment.BorderColor = System.Drawing.Color.Red;
+            this.txtPayment.BorderColor_Normal = System.Drawing.Color.Red;
             this.txtPayment.BorderFocusColor = System.Drawing.Color.Black;
             this.txtPayment.BorderRadius = 7;
             this.txtPayment.BorderSize = 2;
@@ -543,7 +543,7 @@
             // txtIncomeTax
             // 
             this.txtIncomeTax.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIncomeTax.BorderColor = System.Drawing.Color.DarkOliveGreen;
+            this.txtIncomeTax.BorderColor_Normal = System.Drawing.Color.DarkOliveGreen;
             this.txtIncomeTax.BorderFocusColor = System.Drawing.Color.Black;
             this.txtIncomeTax.BorderRadius = 7;
             this.txtIncomeTax.BorderSize = 2;
@@ -567,7 +567,7 @@
             // txtBusinessIncome
             // 
             this.txtBusinessIncome.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBusinessIncome.BorderColor = System.Drawing.Color.Lime;
+            this.txtBusinessIncome.BorderColor_Normal = System.Drawing.Color.Lime;
             this.txtBusinessIncome.BorderFocusColor = System.Drawing.Color.Black;
             this.txtBusinessIncome.BorderRadius = 7;
             this.txtBusinessIncome.BorderSize = 2;
@@ -592,7 +592,7 @@
             // 
             // innoGroupBoxBorder4
             // 
-            this.innoGroupBoxBorder4.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder4.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder4.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder4.BorderWidth = 2;
             this.innoGroupBoxBorder4.Controls.Add(this.label11);
@@ -655,7 +655,7 @@
             // txtResidentTax2
             // 
             this.txtResidentTax2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtResidentTax2.BorderColor = System.Drawing.Color.DarkOliveGreen;
+            this.txtResidentTax2.BorderColor_Normal = System.Drawing.Color.DarkOliveGreen;
             this.txtResidentTax2.BorderFocusColor = System.Drawing.Color.Black;
             this.txtResidentTax2.BorderRadius = 7;
             this.txtResidentTax2.BorderSize = 2;
@@ -678,32 +678,32 @@
             // 
             // btnBusinessIncome_Calc2
             // 
-            this.btnBusinessIncome_Calc2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnBusinessIncome_Calc2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnBusinessIncome_Calc2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBusinessIncome_Calc2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnBusinessIncome_Calc2.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnBusinessIncome_Calc2.BackColor_Normal = System.Drawing.Color.Gainsboro;
+            this.btnBusinessIncome_Calc2.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnBusinessIncome_Calc2.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnBusinessIncome_Calc2.BorderRadius = 0;
-            this.btnBusinessIncome_Calc2.BorderSize = 0;
-            this.btnBusinessIncome_Calc2.CheckBoxType = false;
+            this.btnBusinessIncome_Calc2.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnBusinessIncome_Calc2.Checked = false;
-            this.btnBusinessIncome_Calc2.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnBusinessIncome_Calc2.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnBusinessIncome_Calc2.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBusinessIncome_Calc2.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnBusinessIncome_Calc2.FlatAppearance.BorderSize = 0;
             this.btnBusinessIncome_Calc2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBusinessIncome_Calc2.ForeColor = System.Drawing.Color.White;
+            this.btnBusinessIncome_Calc2.ForeColor = System.Drawing.Color.Black;
+            this.btnBusinessIncome_Calc2.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnBusinessIncome_Calc2.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnBusinessIncome_Calc2.Location = new System.Drawing.Point(183, 42);
             this.btnBusinessIncome_Calc2.Name = "btnBusinessIncome_Calc2";
             this.btnBusinessIncome_Calc2.Size = new System.Drawing.Size(153, 31);
             this.btnBusinessIncome_Calc2.TabIndex = 14;
             this.btnBusinessIncome_Calc2.Text = "계산하기";
-            this.btnBusinessIncome_Calc2.TextColor = System.Drawing.Color.White;
             this.btnBusinessIncome_Calc2.UseVisualStyleBackColor = false;
             this.btnBusinessIncome_Calc2.Click += new System.EventHandler(this.btnBusinessIncome_Calc2_Click);
             // 
             // txtPayment2
             // 
             this.txtPayment2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPayment2.BorderColor = System.Drawing.Color.Lime;
+            this.txtPayment2.BorderColor_Normal = System.Drawing.Color.Lime;
             this.txtPayment2.BorderFocusColor = System.Drawing.Color.Black;
             this.txtPayment2.BorderRadius = 7;
             this.txtPayment2.BorderSize = 2;
@@ -729,7 +729,7 @@
             // txtIncomeTax2
             // 
             this.txtIncomeTax2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIncomeTax2.BorderColor = System.Drawing.Color.DarkOliveGreen;
+            this.txtIncomeTax2.BorderColor_Normal = System.Drawing.Color.DarkOliveGreen;
             this.txtIncomeTax2.BorderFocusColor = System.Drawing.Color.Black;
             this.txtIncomeTax2.BorderRadius = 7;
             this.txtIncomeTax2.BorderSize = 2;
@@ -753,7 +753,7 @@
             // txtBusinessIncome2
             // 
             this.txtBusinessIncome2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBusinessIncome2.BorderColor = System.Drawing.Color.Red;
+            this.txtBusinessIncome2.BorderColor_Normal = System.Drawing.Color.Red;
             this.txtBusinessIncome2.BorderFocusColor = System.Drawing.Color.Black;
             this.txtBusinessIncome2.BorderRadius = 7;
             this.txtBusinessIncome2.BorderSize = 2;
@@ -800,9 +800,9 @@
         }
 
         #endregion
-        private _INNO._UI.InnoButtonColored btnClear;
+        private _INNO._UI.InnoModernButtonRound btnClear;
         private System.Windows.Forms.ListBox listBox1;
-        private _INNO._UI.InnoButtonColored btnVAT_Calc1;
+        private _INNO._UI.InnoModernButtonRound btnVAT_Calc1;
         private _INNO._UI.InnoGroupBoxBorder innoGroupBoxBorder2;
         private System.Windows.Forms.Label label5;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtTotalAmount;
@@ -815,7 +815,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtTaxAmount2;
-        private _INNO._UI.InnoButtonColored btnVAT_Calc2;
+        private _INNO._UI.InnoModernButtonRound btnVAT_Calc2;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtValueOfSupply2;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtTotalAmount2;
         private _INNO._UI.InnoGroupBoxBorder innoGroupBoxBorder3;
@@ -824,7 +824,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtResidentTax;
-        private _INNO._UI.InnoButtonColored btnBusinessIncome_Calc1;
+        private _INNO._UI.InnoModernButtonRound btnBusinessIncome_Calc1;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtPayment;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtIncomeTax;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtBusinessIncome;
@@ -834,7 +834,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtResidentTax2;
-        private _INNO._UI.InnoButtonColored btnBusinessIncome_Calc2;
+        private _INNO._UI.InnoModernButtonRound btnBusinessIncome_Calc2;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtPayment2;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtIncomeTax2;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtBusinessIncome2;

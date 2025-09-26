@@ -33,10 +33,10 @@
             this.txtMorse_DecryptedText = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtMorse_PlainText = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtMorse_EncryptedText = new _INNO._UI.InnoTextBoxColoredPlaceholder();
-            this.btnMorse_BeepStop = new _INNO._UI.InnoButtonColored();
-            this.btnMorse_BeepPlay = new _INNO._UI.InnoButtonColored();
-            this.btnMorse_Encrypt = new _INNO._UI.InnoButtonColored();
-            this.btnMorse_Decrypt = new _INNO._UI.InnoButtonColored();
+            this.btnMorse_BeepStop = new _INNO._UI.InnoModernButtonRound();
+            this.btnMorse_BeepPlay = new _INNO._UI.InnoModernButtonRound();
+            this.btnMorse_Encrypt = new _INNO._UI.InnoModernButtonRound();
+            this.btnMorse_Decrypt = new _INNO._UI.InnoModernButtonRound();
             this.groupCrypt = new _INNO._UI.InnoGroupBoxBorder();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,8 +45,8 @@
             this.txtCrypt_Password = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtCrypt_PlainText = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtCrypt_EncryptedText = new _INNO._UI.InnoTextBoxColoredPlaceholder();
-            this.btnCrypt_Encrypt = new _INNO._UI.InnoButtonColored();
-            this.btnCrypt_Decrypt = new _INNO._UI.InnoButtonColored();
+            this.btnCrypt_Encrypt = new _INNO._UI.InnoModernButtonRound();
+            this.btnCrypt_Decrypt = new _INNO._UI.InnoModernButtonRound();
             this.lbLog = new System.Windows.Forms.ListBox();
             this.sc = new System.Windows.Forms.SplitContainer();
             this.innoGroupBoxBorder1 = new _INNO._UI.InnoGroupBoxBorder();
@@ -54,7 +54,7 @@
             this.comboHash_Type = new System.Windows.Forms.ComboBox();
             this.txtHash_HashText = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.txtHash_PlainText = new _INNO._UI.InnoTextBoxColoredPlaceholder();
-            this.btnHash_Hash = new _INNO._UI.InnoButtonColored();
+            this.btnHash_Hash = new _INNO._UI.InnoModernButtonRound();
             this.groupMorse.SuspendLayout();
             this.groupCrypt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sc)).BeginInit();
@@ -66,7 +66,7 @@
             // 
             // groupMorse
             // 
-            this.groupMorse.BorderColor = System.Drawing.Color.IndianRed;
+            this.groupMorse.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.groupMorse.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.groupMorse.BorderWidth = 2;
             this.groupMorse.Controls.Add(this.txtMorse_DecryptedText);
@@ -89,7 +89,7 @@
             this.txtMorse_DecryptedText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMorse_DecryptedText.BackColor = System.Drawing.SystemColors.Window;
-            this.txtMorse_DecryptedText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.txtMorse_DecryptedText.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.txtMorse_DecryptedText.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtMorse_DecryptedText.BorderRadius = 7;
             this.txtMorse_DecryptedText.BorderSize = 2;
@@ -114,7 +114,7 @@
             this.txtMorse_PlainText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMorse_PlainText.BackColor = System.Drawing.SystemColors.Window;
-            this.txtMorse_PlainText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.txtMorse_PlainText.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.txtMorse_PlainText.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtMorse_PlainText.BorderRadius = 7;
             this.txtMorse_PlainText.BorderSize = 2;
@@ -140,7 +140,7 @@
             this.txtMorse_EncryptedText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMorse_EncryptedText.BackColor = System.Drawing.SystemColors.Window;
-            this.txtMorse_EncryptedText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtMorse_EncryptedText.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtMorse_EncryptedText.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtMorse_EncryptedText.BorderRadius = 7;
             this.txtMorse_EncryptedText.BorderSize = 2;
@@ -163,107 +163,107 @@
             // btnMorse_BeepStop
             // 
             this.btnMorse_BeepStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMorse_BeepStop.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMorse_BeepStop.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMorse_BeepStop.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMorse_BeepStop.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnMorse_BeepStop.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnMorse_BeepStop.BackColor_Normal = System.Drawing.Color.DeepSkyBlue;
+            this.btnMorse_BeepStop.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnMorse_BeepStop.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnMorse_BeepStop.BorderRadius = 5;
-            this.btnMorse_BeepStop.BorderSize = 0;
-            this.btnMorse_BeepStop.CheckBoxType = false;
+            this.btnMorse_BeepStop.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnMorse_BeepStop.Checked = false;
-            this.btnMorse_BeepStop.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnMorse_BeepStop.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnMorse_BeepStop.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMorse_BeepStop.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnMorse_BeepStop.FlatAppearance.BorderSize = 0;
             this.btnMorse_BeepStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMorse_BeepStop.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnMorse_BeepStop.ForeColor = System.Drawing.Color.White;
+            this.btnMorse_BeepStop.ForeColor = System.Drawing.Color.Black;
+            this.btnMorse_BeepStop.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnMorse_BeepStop.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnMorse_BeepStop.Location = new System.Drawing.Point(290, 60);
             this.btnMorse_BeepStop.Name = "btnMorse_BeepStop";
             this.btnMorse_BeepStop.Size = new System.Drawing.Size(36, 31);
             this.btnMorse_BeepStop.TabIndex = 14;
             this.btnMorse_BeepStop.Text = "정지";
-            this.btnMorse_BeepStop.TextColor = System.Drawing.Color.White;
             this.btnMorse_BeepStop.UseVisualStyleBackColor = false;
             this.btnMorse_BeepStop.Click += new System.EventHandler(this.btnMorse_BeepStop_Click);
             // 
             // btnMorse_BeepPlay
             // 
             this.btnMorse_BeepPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMorse_BeepPlay.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMorse_BeepPlay.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMorse_BeepPlay.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMorse_BeepPlay.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnMorse_BeepPlay.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnMorse_BeepPlay.BackColor_Normal = System.Drawing.Color.DeepSkyBlue;
+            this.btnMorse_BeepPlay.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnMorse_BeepPlay.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnMorse_BeepPlay.BorderRadius = 5;
-            this.btnMorse_BeepPlay.BorderSize = 0;
-            this.btnMorse_BeepPlay.CheckBoxType = false;
+            this.btnMorse_BeepPlay.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnMorse_BeepPlay.Checked = false;
-            this.btnMorse_BeepPlay.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnMorse_BeepPlay.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnMorse_BeepPlay.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMorse_BeepPlay.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnMorse_BeepPlay.FlatAppearance.BorderSize = 0;
             this.btnMorse_BeepPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMorse_BeepPlay.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnMorse_BeepPlay.ForeColor = System.Drawing.Color.White;
+            this.btnMorse_BeepPlay.ForeColor = System.Drawing.Color.Black;
+            this.btnMorse_BeepPlay.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnMorse_BeepPlay.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnMorse_BeepPlay.Location = new System.Drawing.Point(236, 60);
             this.btnMorse_BeepPlay.Name = "btnMorse_BeepPlay";
             this.btnMorse_BeepPlay.Size = new System.Drawing.Size(48, 31);
             this.btnMorse_BeepPlay.TabIndex = 14;
             this.btnMorse_BeepPlay.Text = "비프음 재생";
-            this.btnMorse_BeepPlay.TextColor = System.Drawing.Color.White;
             this.btnMorse_BeepPlay.UseVisualStyleBackColor = false;
             this.btnMorse_BeepPlay.Click += new System.EventHandler(this.btnMorse_BeepPlay_Click);
             // 
             // btnMorse_Encrypt
             // 
             this.btnMorse_Encrypt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMorse_Encrypt.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMorse_Encrypt.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMorse_Encrypt.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMorse_Encrypt.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnMorse_Encrypt.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnMorse_Encrypt.BackColor_Normal = System.Drawing.Color.DeepSkyBlue;
+            this.btnMorse_Encrypt.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnMorse_Encrypt.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnMorse_Encrypt.BorderRadius = 5;
-            this.btnMorse_Encrypt.BorderSize = 0;
-            this.btnMorse_Encrypt.CheckBoxType = false;
+            this.btnMorse_Encrypt.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnMorse_Encrypt.Checked = false;
-            this.btnMorse_Encrypt.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnMorse_Encrypt.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnMorse_Encrypt.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMorse_Encrypt.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnMorse_Encrypt.FlatAppearance.BorderSize = 0;
             this.btnMorse_Encrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMorse_Encrypt.ForeColor = System.Drawing.Color.White;
+            this.btnMorse_Encrypt.ForeColor = System.Drawing.Color.Black;
+            this.btnMorse_Encrypt.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnMorse_Encrypt.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnMorse_Encrypt.Location = new System.Drawing.Point(236, 20);
             this.btnMorse_Encrypt.Name = "btnMorse_Encrypt";
             this.btnMorse_Encrypt.Size = new System.Drawing.Size(90, 31);
             this.btnMorse_Encrypt.TabIndex = 14;
             this.btnMorse_Encrypt.Text = "암호화 ▼";
-            this.btnMorse_Encrypt.TextColor = System.Drawing.Color.White;
             this.btnMorse_Encrypt.UseVisualStyleBackColor = false;
             this.btnMorse_Encrypt.Click += new System.EventHandler(this.btnMorse_Encrypt_Click);
             // 
             // btnMorse_Decrypt
             // 
-            this.btnMorse_Decrypt.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMorse_Decrypt.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMorse_Decrypt.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMorse_Decrypt.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnMorse_Decrypt.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnMorse_Decrypt.BackColor_Normal = System.Drawing.Color.DeepSkyBlue;
+            this.btnMorse_Decrypt.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnMorse_Decrypt.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnMorse_Decrypt.BorderRadius = 5;
-            this.btnMorse_Decrypt.BorderSize = 0;
-            this.btnMorse_Decrypt.CheckBoxType = false;
+            this.btnMorse_Decrypt.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnMorse_Decrypt.Checked = false;
-            this.btnMorse_Decrypt.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnMorse_Decrypt.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnMorse_Decrypt.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMorse_Decrypt.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnMorse_Decrypt.FlatAppearance.BorderSize = 0;
             this.btnMorse_Decrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMorse_Decrypt.ForeColor = System.Drawing.Color.White;
+            this.btnMorse_Decrypt.ForeColor = System.Drawing.Color.Black;
+            this.btnMorse_Decrypt.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnMorse_Decrypt.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnMorse_Decrypt.Location = new System.Drawing.Point(8, 99);
             this.btnMorse_Decrypt.Name = "btnMorse_Decrypt";
             this.btnMorse_Decrypt.Size = new System.Drawing.Size(90, 31);
             this.btnMorse_Decrypt.TabIndex = 14;
             this.btnMorse_Decrypt.Text = "복호화 ▶";
-            this.btnMorse_Decrypt.TextColor = System.Drawing.Color.White;
             this.btnMorse_Decrypt.UseVisualStyleBackColor = false;
             this.btnMorse_Decrypt.Click += new System.EventHandler(this.btnMorse_Decrypt_Click);
             // 
             // groupCrypt
             // 
-            this.groupCrypt.BorderColor = System.Drawing.Color.IndianRed;
+            this.groupCrypt.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.groupCrypt.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.groupCrypt.BorderWidth = 2;
             this.groupCrypt.Controls.Add(this.label2);
@@ -326,7 +326,7 @@
             this.txtCrypt_DecryptedText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCrypt_DecryptedText.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCrypt_DecryptedText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.txtCrypt_DecryptedText.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.txtCrypt_DecryptedText.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtCrypt_DecryptedText.BorderRadius = 7;
             this.txtCrypt_DecryptedText.BorderSize = 2;
@@ -351,7 +351,7 @@
             this.txtCrypt_Password.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCrypt_Password.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCrypt_Password.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txtCrypt_Password.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtCrypt_Password.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtCrypt_Password.BorderRadius = 7;
             this.txtCrypt_Password.BorderSize = 2;
@@ -377,7 +377,7 @@
             this.txtCrypt_PlainText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCrypt_PlainText.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCrypt_PlainText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.txtCrypt_PlainText.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.txtCrypt_PlainText.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtCrypt_PlainText.BorderRadius = 7;
             this.txtCrypt_PlainText.BorderSize = 2;
@@ -403,7 +403,7 @@
             this.txtCrypt_EncryptedText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCrypt_EncryptedText.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCrypt_EncryptedText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtCrypt_EncryptedText.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtCrypt_EncryptedText.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtCrypt_EncryptedText.BorderRadius = 7;
             this.txtCrypt_EncryptedText.BorderSize = 2;
@@ -426,49 +426,49 @@
             // btnCrypt_Encrypt
             // 
             this.btnCrypt_Encrypt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCrypt_Encrypt.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnCrypt_Encrypt.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnCrypt_Encrypt.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCrypt_Encrypt.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnCrypt_Encrypt.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCrypt_Encrypt.BackColor_Normal = System.Drawing.Color.DeepSkyBlue;
+            this.btnCrypt_Encrypt.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnCrypt_Encrypt.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnCrypt_Encrypt.BorderRadius = 5;
-            this.btnCrypt_Encrypt.BorderSize = 0;
-            this.btnCrypt_Encrypt.CheckBoxType = false;
+            this.btnCrypt_Encrypt.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCrypt_Encrypt.Checked = false;
-            this.btnCrypt_Encrypt.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCrypt_Encrypt.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnCrypt_Encrypt.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCrypt_Encrypt.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnCrypt_Encrypt.FlatAppearance.BorderSize = 0;
             this.btnCrypt_Encrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrypt_Encrypt.ForeColor = System.Drawing.Color.White;
+            this.btnCrypt_Encrypt.ForeColor = System.Drawing.Color.Black;
+            this.btnCrypt_Encrypt.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnCrypt_Encrypt.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnCrypt_Encrypt.Location = new System.Drawing.Point(273, 89);
             this.btnCrypt_Encrypt.Name = "btnCrypt_Encrypt";
             this.btnCrypt_Encrypt.Size = new System.Drawing.Size(90, 31);
             this.btnCrypt_Encrypt.TabIndex = 14;
             this.btnCrypt_Encrypt.Text = "암호화 ▼";
-            this.btnCrypt_Encrypt.TextColor = System.Drawing.Color.White;
             this.btnCrypt_Encrypt.UseVisualStyleBackColor = false;
             this.btnCrypt_Encrypt.Click += new System.EventHandler(this.btnCrypt_Encrypt_Click);
             // 
             // btnCrypt_Decrypt
             // 
-            this.btnCrypt_Decrypt.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnCrypt_Decrypt.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnCrypt_Decrypt.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCrypt_Decrypt.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnCrypt_Decrypt.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCrypt_Decrypt.BackColor_Normal = System.Drawing.Color.DeepSkyBlue;
+            this.btnCrypt_Decrypt.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnCrypt_Decrypt.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnCrypt_Decrypt.BorderRadius = 5;
-            this.btnCrypt_Decrypt.BorderSize = 0;
-            this.btnCrypt_Decrypt.CheckBoxType = false;
+            this.btnCrypt_Decrypt.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCrypt_Decrypt.Checked = false;
-            this.btnCrypt_Decrypt.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCrypt_Decrypt.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnCrypt_Decrypt.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCrypt_Decrypt.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnCrypt_Decrypt.FlatAppearance.BorderSize = 0;
             this.btnCrypt_Decrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrypt_Decrypt.ForeColor = System.Drawing.Color.White;
+            this.btnCrypt_Decrypt.ForeColor = System.Drawing.Color.Black;
+            this.btnCrypt_Decrypt.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnCrypt_Decrypt.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnCrypt_Decrypt.Location = new System.Drawing.Point(7, 168);
             this.btnCrypt_Decrypt.Name = "btnCrypt_Decrypt";
             this.btnCrypt_Decrypt.Size = new System.Drawing.Size(90, 31);
             this.btnCrypt_Decrypt.TabIndex = 14;
             this.btnCrypt_Decrypt.Text = "복호화 ▶";
-            this.btnCrypt_Decrypt.TextColor = System.Drawing.Color.White;
             this.btnCrypt_Decrypt.UseVisualStyleBackColor = false;
             this.btnCrypt_Decrypt.Click += new System.EventHandler(this.btnCrypt_Decrypt_Click);
             // 
@@ -512,7 +512,7 @@
             // 
             // innoGroupBoxBorder1
             // 
-            this.innoGroupBoxBorder1.BorderColor = System.Drawing.Color.IndianRed;
+            this.innoGroupBoxBorder1.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.innoGroupBoxBorder1.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder1.BorderWidth = 2;
             this.innoGroupBoxBorder1.Controls.Add(this.label3);
@@ -559,7 +559,7 @@
             this.txtHash_HashText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHash_HashText.BackColor = System.Drawing.SystemColors.Window;
-            this.txtHash_HashText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtHash_HashText.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtHash_HashText.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtHash_HashText.BorderRadius = 7;
             this.txtHash_HashText.BorderSize = 2;
@@ -584,7 +584,7 @@
             this.txtHash_PlainText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHash_PlainText.BackColor = System.Drawing.SystemColors.Window;
-            this.txtHash_PlainText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.txtHash_PlainText.BorderColor_Normal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.txtHash_PlainText.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtHash_PlainText.BorderRadius = 7;
             this.txtHash_PlainText.BorderSize = 2;
@@ -607,25 +607,25 @@
             // btnHash_Hash
             // 
             this.btnHash_Hash.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHash_Hash.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnHash_Hash.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnHash_Hash.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnHash_Hash.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnHash_Hash.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnHash_Hash.BackColor_Normal = System.Drawing.Color.DeepSkyBlue;
+            this.btnHash_Hash.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnHash_Hash.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnHash_Hash.BorderRadius = 5;
-            this.btnHash_Hash.BorderSize = 0;
-            this.btnHash_Hash.CheckBoxType = false;
+            this.btnHash_Hash.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnHash_Hash.Checked = false;
-            this.btnHash_Hash.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnHash_Hash.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnHash_Hash.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnHash_Hash.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnHash_Hash.FlatAppearance.BorderSize = 0;
             this.btnHash_Hash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHash_Hash.ForeColor = System.Drawing.Color.White;
+            this.btnHash_Hash.ForeColor = System.Drawing.Color.Black;
+            this.btnHash_Hash.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnHash_Hash.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnHash_Hash.Location = new System.Drawing.Point(273, 60);
             this.btnHash_Hash.Name = "btnHash_Hash";
             this.btnHash_Hash.Size = new System.Drawing.Size(90, 31);
             this.btnHash_Hash.TabIndex = 14;
             this.btnHash_Hash.Text = "해시 ▼";
-            this.btnHash_Hash.TextColor = System.Drawing.Color.White;
             this.btnHash_Hash.UseVisualStyleBackColor = false;
             this.btnHash_Hash.Click += new System.EventHandler(this.btnHash_Hash_Click);
             // 
@@ -653,9 +653,9 @@
 
         #endregion
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtCrypt_PlainText;
-        private _INNO._UI.InnoButtonColored btnCrypt_Encrypt;
+        private _INNO._UI.InnoModernButtonRound btnCrypt_Encrypt;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtCrypt_EncryptedText;
-        private _INNO._UI.InnoButtonColored btnCrypt_Decrypt;
+        private _INNO._UI.InnoModernButtonRound btnCrypt_Decrypt;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtCrypt_DecryptedText;
         private _INNO._UI.InnoGroupBoxBorder groupCrypt;
         private System.Windows.Forms.ComboBox comboCrypt_Type;
@@ -666,10 +666,10 @@
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtMorse_DecryptedText;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtMorse_PlainText;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtMorse_EncryptedText;
-        private _INNO._UI.InnoButtonColored btnMorse_BeepPlay;
-        private _INNO._UI.InnoButtonColored btnMorse_Encrypt;
-        private _INNO._UI.InnoButtonColored btnMorse_Decrypt;
-        private _INNO._UI.InnoButtonColored btnMorse_BeepStop;
+        private _INNO._UI.InnoModernButtonRound btnMorse_BeepPlay;
+        private _INNO._UI.InnoModernButtonRound btnMorse_Encrypt;
+        private _INNO._UI.InnoModernButtonRound btnMorse_Decrypt;
+        private _INNO._UI.InnoModernButtonRound btnMorse_BeepStop;
         private System.Windows.Forms.ListBox lbLog;
         private System.Windows.Forms.SplitContainer sc;
         private _INNO._UI.InnoGroupBoxBorder innoGroupBoxBorder1;
@@ -677,6 +677,6 @@
         private System.Windows.Forms.ComboBox comboHash_Type;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtHash_HashText;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtHash_PlainText;
-        private _INNO._UI.InnoButtonColored btnHash_Hash;
+        private _INNO._UI.InnoModernButtonRound btnHash_Hash;
     }
 }

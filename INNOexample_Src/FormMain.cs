@@ -20,9 +20,9 @@ namespace INNOexample
         // 모든 컨트롤 더블버퍼링 설정
         public static void SetDoubleBufferedAllControls(Control control)
         {
-            foreach (Control c in InnoUI._GetAllControls(control))
+            foreach (Control c in _InnoUI._GetAllControls(control))
             {
-                InnoUI._SetDoubleBuffered(c);
+                _InnoUI._SetDoubleBuffered(c);
                 SetDoubleBufferedAllControls(c);
             }
         }
@@ -108,7 +108,7 @@ namespace INNOexample
                 _SampleForm.CloseAllForm();
 
                 e.Cancel = true;
-                InnoUI.FormFadeOutClose(this);
+                _InnoUI._FormFadeOutClose(this);
             }
         }
 

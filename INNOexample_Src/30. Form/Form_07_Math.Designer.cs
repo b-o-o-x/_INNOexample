@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_07_Math));
             this.sc = new System.Windows.Forms.SplitContainer();
-            this.lbLog = new System.Windows.Forms.ListBox();
             this.btn_InnoMath = new _INNO._UI.InnoButton();
+            this.lbLog = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.sc)).BeginInit();
             this.sc.Panel1.SuspendLayout();
             this.sc.Panel2.SuspendLayout();
@@ -61,6 +61,28 @@
             this.sc.SplitterDistance = 407;
             this.sc.TabIndex = 19;
             // 
+            // btn_InnoMath
+            // 
+            this.btn_InnoMath.BackColor = System.Drawing.Color.White;
+            this.btn_InnoMath.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btn_InnoMath.BackColor_Normal = System.Drawing.Color.White;
+            this.btn_InnoMath.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btn_InnoMath.BorderColor_Normal = System.Drawing.Color.IndianRed;
+            this.btn_InnoMath.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
+            this.btn_InnoMath.Checked = false;
+            this.btn_InnoMath.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoMath.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_InnoMath.ForeColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoMath.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoMath.ForeColor_Normal = System.Drawing.Color.IndianRed;
+            this.btn_InnoMath.Location = new System.Drawing.Point(3, 3);
+            this.btn_InnoMath.Name = "btn_InnoMath";
+            this.btn_InnoMath.Size = new System.Drawing.Size(110, 40);
+            this.btn_InnoMath.TabIndex = 4;
+            this.btn_InnoMath.Text = "_InnoMath";
+            this.btn_InnoMath.UseVisualStyleBackColor = false;
+            this.btn_InnoMath.Click += new System.EventHandler(this.btn_InnoMath_Click);
+            // 
             // lbLog
             // 
             this.lbLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -73,24 +95,6 @@
             this.lbLog.Name = "lbLog";
             this.lbLog.Size = new System.Drawing.Size(776, 154);
             this.lbLog.TabIndex = 16;
-            // 
-            // btn_InnoMath
-            // 
-            this.btn_InnoMath.BackColor = System.Drawing.Color.White;
-            this.btn_InnoMath.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
-            this.btn_InnoMath.Checked = false;
-            this.btn_InnoMath.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_InnoMath.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_InnoMath.ForeColor = System.Drawing.Color.IndianRed;
-            this.btn_InnoMath.Location = new System.Drawing.Point(3, 3);
-            this.btn_InnoMath.Name = "btn_InnoMath";
-            this.btn_InnoMath.NormalBackColor = System.Drawing.Color.White;
-            this.btn_InnoMath.NormalForeColor = System.Drawing.Color.IndianRed;
-            this.btn_InnoMath.Size = new System.Drawing.Size(110, 40);
-            this.btn_InnoMath.TabIndex = 4;
-            this.btn_InnoMath.Text = "_InnoMath";
-            this.btn_InnoMath.UseVisualStyleBackColor = false;
-            this.btn_InnoMath.Click += new System.EventHandler(this.btn_InnoMath_Click);
             // 
             // Form_07_Math
             // 

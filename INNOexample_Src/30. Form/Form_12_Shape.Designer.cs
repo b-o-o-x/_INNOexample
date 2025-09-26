@@ -74,15 +74,19 @@
             // btnMapTest
             // 
             this.btnMapTest.BackColor = System.Drawing.Color.White;
+            this.btnMapTest.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnMapTest.BackColor_Normal = System.Drawing.Color.White;
+            this.btnMapTest.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnMapTest.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnMapTest.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnMapTest.Checked = false;
-            this.btnMapTest.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnMapTest.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMapTest.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnMapTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMapTest.ForeColor = System.Drawing.Color.Black;
+            this.btnMapTest.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnMapTest.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnMapTest.Location = new System.Drawing.Point(473, 49);
             this.btnMapTest.Name = "btnMapTest";
-            this.btnMapTest.NormalBackColor = System.Drawing.Color.White;
-            this.btnMapTest.NormalForeColor = System.Drawing.Color.Black;
             this.btnMapTest.Size = new System.Drawing.Size(110, 40);
             this.btnMapTest.TabIndex = 22;
             this.btnMapTest.Text = "Test Map";
@@ -92,15 +96,19 @@
             // btnCreateMap
             // 
             this.btnCreateMap.BackColor = System.Drawing.Color.White;
+            this.btnCreateMap.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCreateMap.BackColor_Normal = System.Drawing.Color.White;
+            this.btnCreateMap.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnCreateMap.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnCreateMap.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCreateMap.Checked = false;
-            this.btnCreateMap.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCreateMap.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCreateMap.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnCreateMap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateMap.ForeColor = System.Drawing.Color.Black;
+            this.btnCreateMap.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnCreateMap.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnCreateMap.Location = new System.Drawing.Point(473, 3);
             this.btnCreateMap.Name = "btnCreateMap";
-            this.btnCreateMap.NormalBackColor = System.Drawing.Color.White;
-            this.btnCreateMap.NormalForeColor = System.Drawing.Color.Black;
             this.btnCreateMap.Size = new System.Drawing.Size(110, 40);
             this.btnCreateMap.TabIndex = 22;
             this.btnCreateMap.Text = "Create Map";

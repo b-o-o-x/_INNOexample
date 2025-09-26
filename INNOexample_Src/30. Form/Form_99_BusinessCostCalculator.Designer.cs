@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_99_BusinessCostCalculator));
             this.innoGroupBoxBorder3 = new _INNO._UI.InnoGroupBoxBorder();
-            this.btnCal_HBT_JellyRoll = new _INNO._UI.InnoButtonColored();
-            this.btnCal_HBT_VisionSetup = new _INNO._UI.InnoButtonColored();
-            this.btnCal_HBT_CRP = new _INNO._UI.InnoButtonColored();
+            this.btnCal_HBT_JellyRoll = new _INNO._UI.InnoModernButtonRound();
+            this.btnCal_HBT_VisionSetup = new _INNO._UI.InnoModernButtonRound();
+            this.btnCal_HBT_CRP = new _INNO._UI.InnoModernButtonRound();
             this.lvData = new System.Windows.Forms.ListView();
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -62,7 +62,7 @@
             this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnClear = new _INNO._UI.InnoButtonColored();
+            this.btnClear = new _INNO._UI.InnoModernButtonRound();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.txtBusinessExpenses = new _INNO._UI.InnoTextBoxColoredPlaceholder();
             this.label3 = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@
             // 
             // innoGroupBoxBorder3
             // 
-            this.innoGroupBoxBorder3.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder3.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder3.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder3.BorderWidth = 2;
             this.innoGroupBoxBorder3.Controls.Add(this.btnCal_HBT_JellyRoll);
@@ -92,15 +92,13 @@
             // btnCal_HBT_JellyRoll
             // 
             this.btnCal_HBT_JellyRoll.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnCal_HBT_JellyRoll.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnCal_HBT_JellyRoll.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCal_HBT_JellyRoll.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnCal_HBT_JellyRoll.BorderRadius = 0;
-            this.btnCal_HBT_JellyRoll.BorderSize = 0;
-            this.btnCal_HBT_JellyRoll.CheckBoxType = false;
+            this.btnCal_HBT_JellyRoll.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCal_HBT_JellyRoll.Checked = false;
-            this.btnCal_HBT_JellyRoll.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCal_HBT_JellyRoll.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnCal_HBT_JellyRoll.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCal_HBT_JellyRoll.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCal_HBT_JellyRoll.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnCal_HBT_JellyRoll.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
             this.btnCal_HBT_JellyRoll.FlatAppearance.BorderSize = 0;
             this.btnCal_HBT_JellyRoll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCal_HBT_JellyRoll.ForeColor = System.Drawing.Color.White;
@@ -109,22 +107,19 @@
             this.btnCal_HBT_JellyRoll.Size = new System.Drawing.Size(153, 31);
             this.btnCal_HBT_JellyRoll.TabIndex = 14;
             this.btnCal_HBT_JellyRoll.Text = "HBT.JellyRoll 계산";
-            this.btnCal_HBT_JellyRoll.TextColor = System.Drawing.Color.White;
             this.btnCal_HBT_JellyRoll.UseVisualStyleBackColor = false;
             this.btnCal_HBT_JellyRoll.Click += new System.EventHandler(this.btnCal_HBT_JellyRoll_Click);
             // 
             // btnCal_HBT_VisionSetup
             // 
             this.btnCal_HBT_VisionSetup.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnCal_HBT_VisionSetup.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnCal_HBT_VisionSetup.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCal_HBT_VisionSetup.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnCal_HBT_VisionSetup.BorderRadius = 0;
-            this.btnCal_HBT_VisionSetup.BorderSize = 0;
-            this.btnCal_HBT_VisionSetup.CheckBoxType = false;
+            this.btnCal_HBT_VisionSetup.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCal_HBT_VisionSetup.Checked = false;
-            this.btnCal_HBT_VisionSetup.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCal_HBT_VisionSetup.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnCal_HBT_VisionSetup.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCal_HBT_VisionSetup.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCal_HBT_VisionSetup.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnCal_HBT_VisionSetup.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
             this.btnCal_HBT_VisionSetup.FlatAppearance.BorderSize = 0;
             this.btnCal_HBT_VisionSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCal_HBT_VisionSetup.ForeColor = System.Drawing.Color.White;
@@ -133,22 +128,19 @@
             this.btnCal_HBT_VisionSetup.Size = new System.Drawing.Size(153, 31);
             this.btnCal_HBT_VisionSetup.TabIndex = 14;
             this.btnCal_HBT_VisionSetup.Text = "HBT.VisionSetup 계산";
-            this.btnCal_HBT_VisionSetup.TextColor = System.Drawing.Color.White;
             this.btnCal_HBT_VisionSetup.UseVisualStyleBackColor = false;
             this.btnCal_HBT_VisionSetup.Click += new System.EventHandler(this.btnCal_HBT_VisionSetup_Click);
             // 
             // btnCal_HBT_CRP
             // 
             this.btnCal_HBT_CRP.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnCal_HBT_CRP.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnCal_HBT_CRP.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCal_HBT_CRP.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnCal_HBT_CRP.BorderRadius = 0;
-            this.btnCal_HBT_CRP.BorderSize = 0;
-            this.btnCal_HBT_CRP.CheckBoxType = false;
+            this.btnCal_HBT_CRP.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCal_HBT_CRP.Checked = false;
-            this.btnCal_HBT_CRP.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCal_HBT_CRP.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnCal_HBT_CRP.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCal_HBT_CRP.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCal_HBT_CRP.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnCal_HBT_CRP.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
             this.btnCal_HBT_CRP.FlatAppearance.BorderSize = 0;
             this.btnCal_HBT_CRP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCal_HBT_CRP.ForeColor = System.Drawing.Color.White;
@@ -157,7 +149,6 @@
             this.btnCal_HBT_CRP.Size = new System.Drawing.Size(153, 31);
             this.btnCal_HBT_CRP.TabIndex = 14;
             this.btnCal_HBT_CRP.Text = "HBT.CRP 계산";
-            this.btnCal_HBT_CRP.TextColor = System.Drawing.Color.White;
             this.btnCal_HBT_CRP.UseVisualStyleBackColor = false;
             this.btnCal_HBT_CRP.Click += new System.EventHandler(this.btnCal_HBT_CRP_Click);
             // 
@@ -377,15 +368,13 @@
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClear.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnClear.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnClear.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnClear.BorderColor_Normal = System.Drawing.Color.PaleVioletRed;
             this.btnClear.BorderRadius = 0;
-            this.btnClear.BorderSize = 0;
-            this.btnClear.CheckBoxType = false;
+            this.btnClear.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnClear.Checked = false;
-            this.btnClear.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnClear.CheckedBorderColor = System.Drawing.Color.Turquoise;
-            this.btnClear.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnClear.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnClear.BorderColor_Checked = System.Drawing.Color.Turquoise;
+            this.btnClear.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.White;
@@ -394,7 +383,6 @@
             this.btnClear.Size = new System.Drawing.Size(136, 40);
             this.btnClear.TabIndex = 14;
             this.btnClear.Text = "CLEAR";
-            this.btnClear.TextColor = System.Drawing.Color.White;
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -414,7 +402,7 @@
             // 
             this.txtBusinessExpenses.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBusinessExpenses.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBusinessExpenses.BorderColor = System.Drawing.Color.Red;
+            this.txtBusinessExpenses.BorderColor_Normal = System.Drawing.Color.Red;
             this.txtBusinessExpenses.BorderFocusColor = System.Drawing.Color.Black;
             this.txtBusinessExpenses.BorderRadius = 7;
             this.txtBusinessExpenses.BorderSize = 2;
@@ -453,7 +441,7 @@
             // 
             this.txtBusinessIncome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBusinessIncome.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBusinessIncome.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtBusinessIncome.BorderColor_Normal = System.Drawing.Color.DeepSkyBlue;
             this.txtBusinessIncome.BorderFocusColor = System.Drawing.Color.Black;
             this.txtBusinessIncome.BorderRadius = 7;
             this.txtBusinessIncome.BorderSize = 2;
@@ -492,7 +480,7 @@
             // 
             this.txtBusinessProfit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBusinessProfit.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBusinessProfit.BorderColor = System.Drawing.Color.Lime;
+            this.txtBusinessProfit.BorderColor_Normal = System.Drawing.Color.Lime;
             this.txtBusinessProfit.BorderFocusColor = System.Drawing.Color.Black;
             this.txtBusinessProfit.BorderRadius = 7;
             this.txtBusinessProfit.BorderSize = 2;
@@ -553,10 +541,10 @@
         }
 
         #endregion
-        private _INNO._UI.InnoButtonColored btnClear;
+        private _INNO._UI.InnoModernButtonRound btnClear;
         private System.Windows.Forms.ListBox listBox1;
         private _INNO._UI.InnoGroupBoxBorder innoGroupBoxBorder3;
-        private _INNO._UI.InnoButtonColored btnCal_HBT_CRP;
+        private _INNO._UI.InnoModernButtonRound btnCal_HBT_CRP;
         private System.Windows.Forms.ListView lvData;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader11;
@@ -592,7 +580,7 @@
         private System.Windows.Forms.Label label1;
         private _INNO._UI.InnoTextBoxColoredPlaceholder txtBusinessProfit;
         private System.Windows.Forms.Label label2;
-        private _INNO._UI.InnoButtonColored btnCal_HBT_JellyRoll;
-        private _INNO._UI.InnoButtonColored btnCal_HBT_VisionSetup;
+        private _INNO._UI.InnoModernButtonRound btnCal_HBT_JellyRoll;
+        private _INNO._UI.InnoModernButtonRound btnCal_HBT_VisionSetup;
     }
 }

@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_INNO));
             this.btnInnoStaticMethod = new _INNO._UI.InnoButton();
             this.sc = new System.Windows.Forms.SplitContainer();
-            this.lbLog = new System.Windows.Forms.ListBox();
             this.btnInnoExtensions = new _INNO._UI.InnoButton();
+            this.lbLog = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.sc)).BeginInit();
             this.sc.Panel1.SuspendLayout();
             this.sc.Panel2.SuspendLayout();
@@ -42,19 +42,23 @@
             // btnInnoStaticMethod
             // 
             this.btnInnoStaticMethod.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoStaticMethod.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoStaticMethod.BackColor_Normal = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoStaticMethod.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoStaticMethod.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoStaticMethod.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoStaticMethod.Checked = false;
-            this.btnInnoStaticMethod.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoStaticMethod.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoStaticMethod.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoStaticMethod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoStaticMethod.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoStaticMethod.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoStaticMethod.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoStaticMethod.Location = new System.Drawing.Point(15, 18);
             this.btnInnoStaticMethod.Name = "btnInnoStaticMethod";
-            this.btnInnoStaticMethod.NormalBackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnInnoStaticMethod.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoStaticMethod.Size = new System.Drawing.Size(158, 44);
             this.btnInnoStaticMethod.TabIndex = 0;
             this.btnInnoStaticMethod.Text = "_INNO.Inno 정적 메소드";
-            this.btnInnoStaticMethod.UseVisualStyleBackColor = true;
+            this.btnInnoStaticMethod.UseVisualStyleBackColor = false;
             this.btnInnoStaticMethod.Click += new System.EventHandler(this.btnInnoStaticMethod_Click);
             // 
             // sc
@@ -81,6 +85,28 @@
             this.sc.SplitterDistance = 407;
             this.sc.TabIndex = 20;
             // 
+            // btnInnoExtensions
+            // 
+            this.btnInnoExtensions.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoExtensions.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoExtensions.BackColor_Normal = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoExtensions.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoExtensions.BorderColor_Normal = System.Drawing.Color.Silver;
+            this.btnInnoExtensions.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
+            this.btnInnoExtensions.Checked = false;
+            this.btnInnoExtensions.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoExtensions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInnoExtensions.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoExtensions.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoExtensions.ForeColor_Normal = System.Drawing.Color.Black;
+            this.btnInnoExtensions.Location = new System.Drawing.Point(179, 18);
+            this.btnInnoExtensions.Name = "btnInnoExtensions";
+            this.btnInnoExtensions.Size = new System.Drawing.Size(158, 44);
+            this.btnInnoExtensions.TabIndex = 0;
+            this.btnInnoExtensions.Text = "_INNO.Inno 확장 메소드";
+            this.btnInnoExtensions.UseVisualStyleBackColor = false;
+            this.btnInnoExtensions.Click += new System.EventHandler(this.btnInnoExtensions_Click);
+            // 
             // lbLog
             // 
             this.lbLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -92,24 +118,6 @@
             this.lbLog.Name = "lbLog";
             this.lbLog.Size = new System.Drawing.Size(776, 160);
             this.lbLog.TabIndex = 16;
-            // 
-            // btnInnoExtensions
-            // 
-            this.btnInnoExtensions.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnInnoExtensions.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
-            this.btnInnoExtensions.Checked = false;
-            this.btnInnoExtensions.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoExtensions.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnInnoExtensions.ForeColor = System.Drawing.Color.Black;
-            this.btnInnoExtensions.Location = new System.Drawing.Point(179, 18);
-            this.btnInnoExtensions.Name = "btnInnoExtensions";
-            this.btnInnoExtensions.NormalBackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnInnoExtensions.NormalForeColor = System.Drawing.Color.Black;
-            this.btnInnoExtensions.Size = new System.Drawing.Size(158, 44);
-            this.btnInnoExtensions.TabIndex = 0;
-            this.btnInnoExtensions.Text = "_INNO.Inno 확장 메소드";
-            this.btnInnoExtensions.UseVisualStyleBackColor = true;
-            this.btnInnoExtensions.Click += new System.EventHandler(this.btnInnoExtensions_Click);
             // 
             // Form_INNO
             // 

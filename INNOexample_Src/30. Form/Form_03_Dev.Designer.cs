@@ -79,7 +79,7 @@
             // 
             // innoGroupBoxBorder1
             // 
-            this.innoGroupBoxBorder1.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder1.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder1.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder1.BorderWidth = 2;
             this.innoGroupBoxBorder1.Controls.Add(this.picCapture);
@@ -122,15 +122,19 @@
             // 
             this.btnCamDeinit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCamDeinit.BackColor = System.Drawing.Color.White;
+            this.btnCamDeinit.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCamDeinit.BackColor_Normal = System.Drawing.Color.White;
+            this.btnCamDeinit.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnCamDeinit.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnCamDeinit.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCamDeinit.Checked = false;
-            this.btnCamDeinit.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCamDeinit.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCamDeinit.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnCamDeinit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCamDeinit.ForeColor = System.Drawing.Color.Black;
+            this.btnCamDeinit.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnCamDeinit.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnCamDeinit.Location = new System.Drawing.Point(361, 157);
             this.btnCamDeinit.Name = "btnCamDeinit";
-            this.btnCamDeinit.NormalBackColor = System.Drawing.Color.White;
-            this.btnCamDeinit.NormalForeColor = System.Drawing.Color.Black;
             this.btnCamDeinit.Size = new System.Drawing.Size(110, 40);
             this.btnCamDeinit.TabIndex = 4;
             this.btnCamDeinit.Text = "Deinit";
@@ -141,15 +145,19 @@
             // 
             this.btnCamStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCamStop.BackColor = System.Drawing.Color.White;
+            this.btnCamStop.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCamStop.BackColor_Normal = System.Drawing.Color.White;
+            this.btnCamStop.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnCamStop.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnCamStop.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCamStop.Checked = false;
-            this.btnCamStop.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCamStop.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCamStop.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnCamStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCamStop.ForeColor = System.Drawing.Color.Black;
+            this.btnCamStop.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnCamStop.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnCamStop.Location = new System.Drawing.Point(361, 111);
             this.btnCamStop.Name = "btnCamStop";
-            this.btnCamStop.NormalBackColor = System.Drawing.Color.White;
-            this.btnCamStop.NormalForeColor = System.Drawing.Color.Black;
             this.btnCamStop.Size = new System.Drawing.Size(110, 40);
             this.btnCamStop.TabIndex = 4;
             this.btnCamStop.Text = "Stop";
@@ -160,15 +168,19 @@
             // 
             this.btnCamStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCamStart.BackColor = System.Drawing.Color.White;
+            this.btnCamStart.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCamStart.BackColor_Normal = System.Drawing.Color.White;
+            this.btnCamStart.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnCamStart.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnCamStart.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCamStart.Checked = false;
-            this.btnCamStart.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCamStart.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCamStart.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnCamStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCamStart.ForeColor = System.Drawing.Color.Black;
+            this.btnCamStart.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnCamStart.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnCamStart.Location = new System.Drawing.Point(361, 66);
             this.btnCamStart.Name = "btnCamStart";
-            this.btnCamStart.NormalBackColor = System.Drawing.Color.White;
-            this.btnCamStart.NormalForeColor = System.Drawing.Color.Black;
             this.btnCamStart.Size = new System.Drawing.Size(110, 40);
             this.btnCamStart.TabIndex = 4;
             this.btnCamStart.Text = "Start";
@@ -179,15 +191,19 @@
             // 
             this.btnCamInit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCamInit.BackColor = System.Drawing.Color.White;
+            this.btnCamInit.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnCamInit.BackColor_Normal = System.Drawing.Color.White;
+            this.btnCamInit.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnCamInit.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnCamInit.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnCamInit.Checked = false;
-            this.btnCamInit.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnCamInit.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCamInit.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnCamInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCamInit.ForeColor = System.Drawing.Color.Black;
+            this.btnCamInit.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnCamInit.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnCamInit.Location = new System.Drawing.Point(361, 20);
             this.btnCamInit.Name = "btnCamInit";
-            this.btnCamInit.NormalBackColor = System.Drawing.Color.White;
-            this.btnCamInit.NormalForeColor = System.Drawing.Color.Black;
             this.btnCamInit.Size = new System.Drawing.Size(110, 40);
             this.btnCamInit.TabIndex = 4;
             this.btnCamInit.Text = "Init";
@@ -196,7 +212,7 @@
             // 
             // innoGroupBoxBorder2
             // 
-            this.innoGroupBoxBorder2.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder2.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder2.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder2.BorderWidth = 2;
             this.innoGroupBoxBorder2.Location = new System.Drawing.Point(3, 160);
@@ -208,7 +224,7 @@
             // 
             // groupCrypt
             // 
-            this.groupCrypt.BorderColor = System.Drawing.Color.Black;
+            this.groupCrypt.BorderColor_Normal = System.Drawing.Color.Black;
             this.groupCrypt.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.groupCrypt.BorderWidth = 2;
             this.groupCrypt.Controls.Add(this.btnDevRadianQBioIndicator);
@@ -223,15 +239,19 @@
             // btnDevRadianQBioIndicator
             // 
             this.btnDevRadianQBioIndicator.BackColor = System.Drawing.Color.White;
+            this.btnDevRadianQBioIndicator.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnDevRadianQBioIndicator.BackColor_Normal = System.Drawing.Color.White;
+            this.btnDevRadianQBioIndicator.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnDevRadianQBioIndicator.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnDevRadianQBioIndicator.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnDevRadianQBioIndicator.Checked = false;
-            this.btnDevRadianQBioIndicator.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDevRadianQBioIndicator.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnDevRadianQBioIndicator.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnDevRadianQBioIndicator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevRadianQBioIndicator.ForeColor = System.Drawing.Color.Black;
+            this.btnDevRadianQBioIndicator.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnDevRadianQBioIndicator.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnDevRadianQBioIndicator.Location = new System.Drawing.Point(6, 66);
             this.btnDevRadianQBioIndicator.Name = "btnDevRadianQBioIndicator";
-            this.btnDevRadianQBioIndicator.NormalBackColor = System.Drawing.Color.White;
-            this.btnDevRadianQBioIndicator.NormalForeColor = System.Drawing.Color.Black;
             this.btnDevRadianQBioIndicator.Size = new System.Drawing.Size(110, 40);
             this.btnDevRadianQBioIndicator.TabIndex = 4;
             this.btnDevRadianQBioIndicator.Text = "RadianQBio Indicator";
@@ -241,15 +261,19 @@
             // btnDevIFLightController
             // 
             this.btnDevIFLightController.BackColor = System.Drawing.Color.White;
+            this.btnDevIFLightController.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnDevIFLightController.BackColor_Normal = System.Drawing.Color.White;
+            this.btnDevIFLightController.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnDevIFLightController.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnDevIFLightController.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnDevIFLightController.Checked = false;
-            this.btnDevIFLightController.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDevIFLightController.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnDevIFLightController.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnDevIFLightController.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevIFLightController.ForeColor = System.Drawing.Color.Black;
+            this.btnDevIFLightController.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnDevIFLightController.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnDevIFLightController.Location = new System.Drawing.Point(6, 20);
             this.btnDevIFLightController.Name = "btnDevIFLightController";
-            this.btnDevIFLightController.NormalBackColor = System.Drawing.Color.White;
-            this.btnDevIFLightController.NormalForeColor = System.Drawing.Color.Black;
             this.btnDevIFLightController.Size = new System.Drawing.Size(110, 40);
             this.btnDevIFLightController.TabIndex = 4;
             this.btnDevIFLightController.Text = "IF LightController";

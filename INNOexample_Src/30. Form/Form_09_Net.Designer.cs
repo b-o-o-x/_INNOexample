@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_09_Net));
             this.sc = new System.Windows.Forms.SplitContainer();
+            this.btn_InnoNet = new _INNO._UI.InnoButton();
             this.btnInnoTcpTester = new _INNO._UI.InnoButton();
             this.lbLog = new System.Windows.Forms.ListBox();
-            this.btn_InnoNet = new _INNO._UI.InnoButton();
             ((System.ComponentModel.ISupportInitialize)(this.sc)).BeginInit();
             this.sc.Panel1.SuspendLayout();
             this.sc.Panel2.SuspendLayout();
@@ -63,18 +63,44 @@
             this.sc.SplitterDistance = 407;
             this.sc.TabIndex = 19;
             // 
+            // btn_InnoNet
+            // 
+            this.btn_InnoNet.BackColor = System.Drawing.Color.White;
+            this.btn_InnoNet.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btn_InnoNet.BackColor_Normal = System.Drawing.Color.White;
+            this.btn_InnoNet.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btn_InnoNet.BorderColor_Normal = System.Drawing.Color.IndianRed;
+            this.btn_InnoNet.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
+            this.btn_InnoNet.Checked = false;
+            this.btn_InnoNet.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoNet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_InnoNet.ForeColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoNet.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoNet.ForeColor_Normal = System.Drawing.Color.IndianRed;
+            this.btn_InnoNet.Location = new System.Drawing.Point(3, 3);
+            this.btn_InnoNet.Name = "btn_InnoNet";
+            this.btn_InnoNet.Size = new System.Drawing.Size(110, 40);
+            this.btn_InnoNet.TabIndex = 5;
+            this.btn_InnoNet.Text = "_InnoNet";
+            this.btn_InnoNet.UseVisualStyleBackColor = false;
+            this.btn_InnoNet.Click += new System.EventHandler(this.btn_InnoNet_Click);
+            // 
             // btnInnoTcpTester
             // 
             this.btnInnoTcpTester.BackColor = System.Drawing.Color.White;
+            this.btnInnoTcpTester.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoTcpTester.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoTcpTester.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoTcpTester.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoTcpTester.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoTcpTester.Checked = false;
-            this.btnInnoTcpTester.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoTcpTester.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoTcpTester.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoTcpTester.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoTcpTester.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoTcpTester.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoTcpTester.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoTcpTester.Location = new System.Drawing.Point(3, 76);
             this.btnInnoTcpTester.Name = "btnInnoTcpTester";
-            this.btnInnoTcpTester.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoTcpTester.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoTcpTester.Size = new System.Drawing.Size(110, 40);
             this.btnInnoTcpTester.TabIndex = 4;
             this.btnInnoTcpTester.Text = "InnoTcpTester";
@@ -93,24 +119,6 @@
             this.lbLog.Name = "lbLog";
             this.lbLog.Size = new System.Drawing.Size(776, 154);
             this.lbLog.TabIndex = 16;
-            // 
-            // btn_InnoNet
-            // 
-            this.btn_InnoNet.BackColor = System.Drawing.Color.White;
-            this.btn_InnoNet.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
-            this.btn_InnoNet.Checked = false;
-            this.btn_InnoNet.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_InnoNet.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_InnoNet.ForeColor = System.Drawing.Color.IndianRed;
-            this.btn_InnoNet.Location = new System.Drawing.Point(3, 3);
-            this.btn_InnoNet.Name = "btn_InnoNet";
-            this.btn_InnoNet.NormalBackColor = System.Drawing.Color.White;
-            this.btn_InnoNet.NormalForeColor = System.Drawing.Color.IndianRed;
-            this.btn_InnoNet.Size = new System.Drawing.Size(110, 40);
-            this.btn_InnoNet.TabIndex = 5;
-            this.btn_InnoNet.Text = "_InnoNet";
-            this.btn_InnoNet.UseVisualStyleBackColor = false;
-            this.btn_InnoNet.Click += new System.EventHandler(this.btn_InnoNet_Click);
             // 
             // Form_09_Net
             // 

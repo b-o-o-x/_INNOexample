@@ -66,15 +66,19 @@
             // btnInnoSystemRegistry
             // 
             this.btnInnoSystemRegistry.BackColor = System.Drawing.Color.White;
+            this.btnInnoSystemRegistry.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoSystemRegistry.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoSystemRegistry.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoSystemRegistry.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoSystemRegistry.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoSystemRegistry.Checked = false;
-            this.btnInnoSystemRegistry.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoSystemRegistry.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoSystemRegistry.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoSystemRegistry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoSystemRegistry.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoSystemRegistry.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoSystemRegistry.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoSystemRegistry.Location = new System.Drawing.Point(3, 49);
             this.btnInnoSystemRegistry.Name = "btnInnoSystemRegistry";
-            this.btnInnoSystemRegistry.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoSystemRegistry.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoSystemRegistry.Size = new System.Drawing.Size(110, 40);
             this.btnInnoSystemRegistry.TabIndex = 13;
             this.btnInnoSystemRegistry.Text = "InnoSystemRegistry";
@@ -84,15 +88,19 @@
             // btn_InnoSystem
             // 
             this.btn_InnoSystem.BackColor = System.Drawing.Color.White;
+            this.btn_InnoSystem.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btn_InnoSystem.BackColor_Normal = System.Drawing.Color.White;
+            this.btn_InnoSystem.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btn_InnoSystem.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoSystem.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btn_InnoSystem.Checked = false;
-            this.btn_InnoSystem.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_InnoSystem.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoSystem.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoSystem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_InnoSystem.ForeColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoSystem.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoSystem.ForeColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoSystem.Location = new System.Drawing.Point(3, 3);
             this.btn_InnoSystem.Name = "btn_InnoSystem";
-            this.btn_InnoSystem.NormalBackColor = System.Drawing.Color.White;
-            this.btn_InnoSystem.NormalForeColor = System.Drawing.Color.IndianRed;
             this.btn_InnoSystem.Size = new System.Drawing.Size(110, 40);
             this.btn_InnoSystem.TabIndex = 13;
             this.btn_InnoSystem.Text = "_InnoSystem";

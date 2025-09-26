@@ -28,7 +28,7 @@ namespace INNOexample
 
         private void Form_Load(object sender, EventArgs e)
         {
-            InnoUI._SetDoubleBuffered(lbLog);
+            _InnoUI._SetDoubleBuffered(lbLog);
             SetPrintLogControl(lbLog);
         }
 

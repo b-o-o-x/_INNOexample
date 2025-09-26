@@ -34,7 +34,9 @@
             this.btn_InnoThread_Stop = new _INNO._UI.InnoButton();
             this.btn_InnoThread_Start = new _INNO._UI.InnoButton();
             this.innoGroupBoxBorder4 = new _INNO._UI.InnoGroupBoxBorder();
+            this.btnInnoThreadCallback_Resume = new _INNO._UI.InnoButton();
             this.btnInnoThreadCallback_Stop = new _INNO._UI.InnoButton();
+            this.btnInnoThreadCallback_Pause = new _INNO._UI.InnoButton();
             this.btnInnoThreadCallback_Start = new _INNO._UI.InnoButton();
             this.innoGroupBoxBorder2 = new _INNO._UI.InnoGroupBoxBorder();
             this.btnInnoBackgroundWorker_Resume = new _INNO._UI.InnoButton();
@@ -48,8 +50,6 @@
             this.btn_InnoNameThread_Stop = new _INNO._UI.InnoButton();
             this.btn_InnoNameThread_Start = new _INNO._UI.InnoButton();
             this.lbLog = new System.Windows.Forms.ListBox();
-            this.btnInnoThreadCallback_Pause = new _INNO._UI.InnoButton();
-            this.btnInnoThreadCallback_Resume = new _INNO._UI.InnoButton();
             ((System.ComponentModel.ISupportInitialize)(this.sc)).BeginInit();
             this.sc.Panel1.SuspendLayout();
             this.sc.Panel2.SuspendLayout();
@@ -90,7 +90,7 @@
             // 
             // innoGroupBoxBorder3
             // 
-            this.innoGroupBoxBorder3.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder3.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder3.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder3.BorderWidth = 2;
             this.innoGroupBoxBorder3.Controls.Add(this.btn_InnoThread_Stop);
@@ -106,15 +106,19 @@
             // btn_InnoThread_Stop
             // 
             this.btn_InnoThread_Stop.BackColor = System.Drawing.Color.White;
+            this.btn_InnoThread_Stop.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btn_InnoThread_Stop.BackColor_Normal = System.Drawing.Color.White;
+            this.btn_InnoThread_Stop.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btn_InnoThread_Stop.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoThread_Stop.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btn_InnoThread_Stop.Checked = false;
-            this.btn_InnoThread_Stop.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_InnoThread_Stop.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoThread_Stop.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoThread_Stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_InnoThread_Stop.ForeColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoThread_Stop.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoThread_Stop.ForeColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoThread_Stop.Location = new System.Drawing.Point(6, 66);
             this.btn_InnoThread_Stop.Name = "btn_InnoThread_Stop";
-            this.btn_InnoThread_Stop.NormalBackColor = System.Drawing.Color.White;
-            this.btn_InnoThread_Stop.NormalForeColor = System.Drawing.Color.IndianRed;
             this.btn_InnoThread_Stop.Size = new System.Drawing.Size(110, 40);
             this.btn_InnoThread_Stop.TabIndex = 4;
             this.btn_InnoThread_Stop.Text = "Stop (자체)";
@@ -124,15 +128,19 @@
             // btn_InnoThread_Start
             // 
             this.btn_InnoThread_Start.BackColor = System.Drawing.Color.White;
+            this.btn_InnoThread_Start.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btn_InnoThread_Start.BackColor_Normal = System.Drawing.Color.White;
+            this.btn_InnoThread_Start.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btn_InnoThread_Start.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoThread_Start.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btn_InnoThread_Start.Checked = false;
-            this.btn_InnoThread_Start.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_InnoThread_Start.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoThread_Start.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoThread_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_InnoThread_Start.ForeColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoThread_Start.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoThread_Start.ForeColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoThread_Start.Location = new System.Drawing.Point(6, 20);
             this.btn_InnoThread_Start.Name = "btn_InnoThread_Start";
-            this.btn_InnoThread_Start.NormalBackColor = System.Drawing.Color.White;
-            this.btn_InnoThread_Start.NormalForeColor = System.Drawing.Color.IndianRed;
             this.btn_InnoThread_Start.Size = new System.Drawing.Size(110, 40);
             this.btn_InnoThread_Start.TabIndex = 0;
             this.btn_InnoThread_Start.Text = "_Start";
@@ -141,7 +149,7 @@
             // 
             // innoGroupBoxBorder4
             // 
-            this.innoGroupBoxBorder4.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder4.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder4.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder4.BorderWidth = 2;
             this.innoGroupBoxBorder4.Controls.Add(this.btnInnoThreadCallback_Resume);
@@ -155,36 +163,88 @@
             this.innoGroupBoxBorder4.TabStop = false;
             this.innoGroupBoxBorder4.Text = "InnoThreadCallback";
             // 
+            // btnInnoThreadCallback_Resume
+            // 
+            this.btnInnoThreadCallback_Resume.BackColor = System.Drawing.Color.White;
+            this.btnInnoThreadCallback_Resume.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoThreadCallback_Resume.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoThreadCallback_Resume.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoThreadCallback_Resume.BorderColor_Normal = System.Drawing.Color.Silver;
+            this.btnInnoThreadCallback_Resume.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
+            this.btnInnoThreadCallback_Resume.Checked = false;
+            this.btnInnoThreadCallback_Resume.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoThreadCallback_Resume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInnoThreadCallback_Resume.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoThreadCallback_Resume.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoThreadCallback_Resume.ForeColor_Normal = System.Drawing.Color.Black;
+            this.btnInnoThreadCallback_Resume.Location = new System.Drawing.Point(122, 66);
+            this.btnInnoThreadCallback_Resume.Name = "btnInnoThreadCallback_Resume";
+            this.btnInnoThreadCallback_Resume.Size = new System.Drawing.Size(110, 40);
+            this.btnInnoThreadCallback_Resume.TabIndex = 4;
+            this.btnInnoThreadCallback_Resume.Text = "Resume";
+            this.btnInnoThreadCallback_Resume.UseVisualStyleBackColor = false;
+            this.btnInnoThreadCallback_Resume.Click += new System.EventHandler(this.btnInnoThreadCallback_Resume_Click);
+            // 
             // btnInnoThreadCallback_Stop
             // 
             this.btnInnoThreadCallback_Stop.BackColor = System.Drawing.Color.White;
+            this.btnInnoThreadCallback_Stop.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoThreadCallback_Stop.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoThreadCallback_Stop.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoThreadCallback_Stop.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoThreadCallback_Stop.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoThreadCallback_Stop.Checked = false;
-            this.btnInnoThreadCallback_Stop.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoThreadCallback_Stop.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoThreadCallback_Stop.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoThreadCallback_Stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoThreadCallback_Stop.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoThreadCallback_Stop.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoThreadCallback_Stop.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoThreadCallback_Stop.Location = new System.Drawing.Point(6, 66);
             this.btnInnoThreadCallback_Stop.Name = "btnInnoThreadCallback_Stop";
-            this.btnInnoThreadCallback_Stop.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoThreadCallback_Stop.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoThreadCallback_Stop.Size = new System.Drawing.Size(110, 40);
             this.btnInnoThreadCallback_Stop.TabIndex = 4;
             this.btnInnoThreadCallback_Stop.Text = "Stop";
             this.btnInnoThreadCallback_Stop.UseVisualStyleBackColor = false;
             this.btnInnoThreadCallback_Stop.Click += new System.EventHandler(this.btnInnoThreadCallback_Stop_Click);
             // 
+            // btnInnoThreadCallback_Pause
+            // 
+            this.btnInnoThreadCallback_Pause.BackColor = System.Drawing.Color.White;
+            this.btnInnoThreadCallback_Pause.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoThreadCallback_Pause.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoThreadCallback_Pause.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoThreadCallback_Pause.BorderColor_Normal = System.Drawing.Color.Silver;
+            this.btnInnoThreadCallback_Pause.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
+            this.btnInnoThreadCallback_Pause.Checked = false;
+            this.btnInnoThreadCallback_Pause.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoThreadCallback_Pause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInnoThreadCallback_Pause.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoThreadCallback_Pause.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoThreadCallback_Pause.ForeColor_Normal = System.Drawing.Color.Black;
+            this.btnInnoThreadCallback_Pause.Location = new System.Drawing.Point(122, 20);
+            this.btnInnoThreadCallback_Pause.Name = "btnInnoThreadCallback_Pause";
+            this.btnInnoThreadCallback_Pause.Size = new System.Drawing.Size(110, 40);
+            this.btnInnoThreadCallback_Pause.TabIndex = 0;
+            this.btnInnoThreadCallback_Pause.Text = "Pause";
+            this.btnInnoThreadCallback_Pause.UseVisualStyleBackColor = false;
+            this.btnInnoThreadCallback_Pause.Click += new System.EventHandler(this.btnInnoThreadCallback_Pause_Click);
+            // 
             // btnInnoThreadCallback_Start
             // 
             this.btnInnoThreadCallback_Start.BackColor = System.Drawing.Color.White;
+            this.btnInnoThreadCallback_Start.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoThreadCallback_Start.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoThreadCallback_Start.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoThreadCallback_Start.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoThreadCallback_Start.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoThreadCallback_Start.Checked = false;
-            this.btnInnoThreadCallback_Start.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoThreadCallback_Start.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoThreadCallback_Start.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoThreadCallback_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoThreadCallback_Start.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoThreadCallback_Start.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoThreadCallback_Start.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoThreadCallback_Start.Location = new System.Drawing.Point(6, 20);
             this.btnInnoThreadCallback_Start.Name = "btnInnoThreadCallback_Start";
-            this.btnInnoThreadCallback_Start.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoThreadCallback_Start.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoThreadCallback_Start.Size = new System.Drawing.Size(110, 40);
             this.btnInnoThreadCallback_Start.TabIndex = 0;
             this.btnInnoThreadCallback_Start.Text = "Start";
@@ -193,7 +253,7 @@
             // 
             // innoGroupBoxBorder2
             // 
-            this.innoGroupBoxBorder2.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder2.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder2.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder2.BorderWidth = 2;
             this.innoGroupBoxBorder2.Controls.Add(this.btnInnoBackgroundWorker_Resume);
@@ -210,15 +270,19 @@
             // btnInnoBackgroundWorker_Resume
             // 
             this.btnInnoBackgroundWorker_Resume.BackColor = System.Drawing.Color.White;
+            this.btnInnoBackgroundWorker_Resume.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoBackgroundWorker_Resume.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoBackgroundWorker_Resume.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoBackgroundWorker_Resume.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoBackgroundWorker_Resume.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoBackgroundWorker_Resume.Checked = false;
-            this.btnInnoBackgroundWorker_Resume.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoBackgroundWorker_Resume.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoBackgroundWorker_Resume.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoBackgroundWorker_Resume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoBackgroundWorker_Resume.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoBackgroundWorker_Resume.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoBackgroundWorker_Resume.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoBackgroundWorker_Resume.Location = new System.Drawing.Point(122, 66);
             this.btnInnoBackgroundWorker_Resume.Name = "btnInnoBackgroundWorker_Resume";
-            this.btnInnoBackgroundWorker_Resume.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoBackgroundWorker_Resume.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoBackgroundWorker_Resume.Size = new System.Drawing.Size(110, 40);
             this.btnInnoBackgroundWorker_Resume.TabIndex = 4;
             this.btnInnoBackgroundWorker_Resume.Text = "Resume";
@@ -228,15 +292,19 @@
             // btnInnoBackgroundWorker_Stop
             // 
             this.btnInnoBackgroundWorker_Stop.BackColor = System.Drawing.Color.White;
+            this.btnInnoBackgroundWorker_Stop.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoBackgroundWorker_Stop.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoBackgroundWorker_Stop.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoBackgroundWorker_Stop.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoBackgroundWorker_Stop.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoBackgroundWorker_Stop.Checked = false;
-            this.btnInnoBackgroundWorker_Stop.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoBackgroundWorker_Stop.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoBackgroundWorker_Stop.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoBackgroundWorker_Stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoBackgroundWorker_Stop.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoBackgroundWorker_Stop.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoBackgroundWorker_Stop.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoBackgroundWorker_Stop.Location = new System.Drawing.Point(6, 66);
             this.btnInnoBackgroundWorker_Stop.Name = "btnInnoBackgroundWorker_Stop";
-            this.btnInnoBackgroundWorker_Stop.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoBackgroundWorker_Stop.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoBackgroundWorker_Stop.Size = new System.Drawing.Size(110, 40);
             this.btnInnoBackgroundWorker_Stop.TabIndex = 4;
             this.btnInnoBackgroundWorker_Stop.Text = "Stop";
@@ -246,15 +314,19 @@
             // btnInnoBackgroundWorker_Pause
             // 
             this.btnInnoBackgroundWorker_Pause.BackColor = System.Drawing.Color.White;
+            this.btnInnoBackgroundWorker_Pause.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoBackgroundWorker_Pause.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoBackgroundWorker_Pause.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoBackgroundWorker_Pause.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoBackgroundWorker_Pause.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoBackgroundWorker_Pause.Checked = false;
-            this.btnInnoBackgroundWorker_Pause.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoBackgroundWorker_Pause.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoBackgroundWorker_Pause.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoBackgroundWorker_Pause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoBackgroundWorker_Pause.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoBackgroundWorker_Pause.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoBackgroundWorker_Pause.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoBackgroundWorker_Pause.Location = new System.Drawing.Point(122, 20);
             this.btnInnoBackgroundWorker_Pause.Name = "btnInnoBackgroundWorker_Pause";
-            this.btnInnoBackgroundWorker_Pause.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoBackgroundWorker_Pause.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoBackgroundWorker_Pause.Size = new System.Drawing.Size(110, 40);
             this.btnInnoBackgroundWorker_Pause.TabIndex = 0;
             this.btnInnoBackgroundWorker_Pause.Text = "Pause";
@@ -264,15 +336,19 @@
             // btnInnoBackgroundWorker_Start
             // 
             this.btnInnoBackgroundWorker_Start.BackColor = System.Drawing.Color.White;
+            this.btnInnoBackgroundWorker_Start.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoBackgroundWorker_Start.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoBackgroundWorker_Start.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoBackgroundWorker_Start.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoBackgroundWorker_Start.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoBackgroundWorker_Start.Checked = false;
-            this.btnInnoBackgroundWorker_Start.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoBackgroundWorker_Start.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoBackgroundWorker_Start.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoBackgroundWorker_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoBackgroundWorker_Start.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoBackgroundWorker_Start.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoBackgroundWorker_Start.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoBackgroundWorker_Start.Location = new System.Drawing.Point(6, 20);
             this.btnInnoBackgroundWorker_Start.Name = "btnInnoBackgroundWorker_Start";
-            this.btnInnoBackgroundWorker_Start.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoBackgroundWorker_Start.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoBackgroundWorker_Start.Size = new System.Drawing.Size(110, 40);
             this.btnInnoBackgroundWorker_Start.TabIndex = 0;
             this.btnInnoBackgroundWorker_Start.Text = "Start";
@@ -281,7 +357,7 @@
             // 
             // innoGroupBoxBorder1
             // 
-            this.innoGroupBoxBorder1.BorderColor = System.Drawing.Color.Black;
+            this.innoGroupBoxBorder1.BorderColor_Normal = System.Drawing.Color.Black;
             this.innoGroupBoxBorder1.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.innoGroupBoxBorder1.BorderWidth = 2;
             this.innoGroupBoxBorder1.Controls.Add(this.btnInnoNameThread_Stop);
@@ -296,15 +372,19 @@
             // btnInnoNameThread_Stop
             // 
             this.btnInnoNameThread_Stop.BackColor = System.Drawing.Color.White;
+            this.btnInnoNameThread_Stop.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoNameThread_Stop.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoNameThread_Stop.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoNameThread_Stop.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoNameThread_Stop.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoNameThread_Stop.Checked = false;
-            this.btnInnoNameThread_Stop.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoNameThread_Stop.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoNameThread_Stop.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoNameThread_Stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoNameThread_Stop.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoNameThread_Stop.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoNameThread_Stop.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoNameThread_Stop.Location = new System.Drawing.Point(6, 66);
             this.btnInnoNameThread_Stop.Name = "btnInnoNameThread_Stop";
-            this.btnInnoNameThread_Stop.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoNameThread_Stop.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoNameThread_Stop.Size = new System.Drawing.Size(110, 40);
             this.btnInnoNameThread_Stop.TabIndex = 4;
             this.btnInnoNameThread_Stop.Text = "Stop";
@@ -314,15 +394,19 @@
             // btnInnoNameThread_Start
             // 
             this.btnInnoNameThread_Start.BackColor = System.Drawing.Color.White;
+            this.btnInnoNameThread_Start.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnInnoNameThread_Start.BackColor_Normal = System.Drawing.Color.White;
+            this.btnInnoNameThread_Start.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btnInnoNameThread_Start.BorderColor_Normal = System.Drawing.Color.Silver;
             this.btnInnoNameThread_Start.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btnInnoNameThread_Start.Checked = false;
-            this.btnInnoNameThread_Start.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoNameThread_Start.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoNameThread_Start.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnInnoNameThread_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInnoNameThread_Start.ForeColor = System.Drawing.Color.Black;
+            this.btnInnoNameThread_Start.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btnInnoNameThread_Start.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnInnoNameThread_Start.Location = new System.Drawing.Point(6, 20);
             this.btnInnoNameThread_Start.Name = "btnInnoNameThread_Start";
-            this.btnInnoNameThread_Start.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoNameThread_Start.NormalForeColor = System.Drawing.Color.Black;
             this.btnInnoNameThread_Start.Size = new System.Drawing.Size(110, 40);
             this.btnInnoNameThread_Start.TabIndex = 0;
             this.btnInnoNameThread_Start.Text = "Start";
@@ -331,7 +415,7 @@
             // 
             // groupInnoNameThread_static
             // 
-            this.groupInnoNameThread_static.BorderColor = System.Drawing.Color.IndianRed;
+            this.groupInnoNameThread_static.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.groupInnoNameThread_static.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.groupInnoNameThread_static.BorderWidth = 2;
             this.groupInnoNameThread_static.Controls.Add(this.btn_InnoNameThread_Stop);
@@ -347,15 +431,19 @@
             // btn_InnoNameThread_Stop
             // 
             this.btn_InnoNameThread_Stop.BackColor = System.Drawing.Color.White;
+            this.btn_InnoNameThread_Stop.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btn_InnoNameThread_Stop.BackColor_Normal = System.Drawing.Color.White;
+            this.btn_InnoNameThread_Stop.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btn_InnoNameThread_Stop.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoNameThread_Stop.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btn_InnoNameThread_Stop.Checked = false;
-            this.btn_InnoNameThread_Stop.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_InnoNameThread_Stop.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoNameThread_Stop.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoNameThread_Stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_InnoNameThread_Stop.ForeColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoNameThread_Stop.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoNameThread_Stop.ForeColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoNameThread_Stop.Location = new System.Drawing.Point(6, 66);
             this.btn_InnoNameThread_Stop.Name = "btn_InnoNameThread_Stop";
-            this.btn_InnoNameThread_Stop.NormalBackColor = System.Drawing.Color.White;
-            this.btn_InnoNameThread_Stop.NormalForeColor = System.Drawing.Color.IndianRed;
             this.btn_InnoNameThread_Stop.Size = new System.Drawing.Size(110, 40);
             this.btn_InnoNameThread_Stop.TabIndex = 4;
             this.btn_InnoNameThread_Stop.Text = "_Stop";
@@ -365,15 +453,19 @@
             // btn_InnoNameThread_Start
             // 
             this.btn_InnoNameThread_Start.BackColor = System.Drawing.Color.White;
+            this.btn_InnoNameThread_Start.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btn_InnoNameThread_Start.BackColor_Normal = System.Drawing.Color.White;
+            this.btn_InnoNameThread_Start.BorderColor_Checked = System.Drawing.Color.PowderBlue;
+            this.btn_InnoNameThread_Start.BorderColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoNameThread_Start.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
             this.btn_InnoNameThread_Start.Checked = false;
-            this.btn_InnoNameThread_Start.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_InnoNameThread_Start.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoNameThread_Start.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoNameThread_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_InnoNameThread_Start.ForeColor = System.Drawing.Color.IndianRed;
+            this.btn_InnoNameThread_Start.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
+            this.btn_InnoNameThread_Start.ForeColor_Normal = System.Drawing.Color.IndianRed;
             this.btn_InnoNameThread_Start.Location = new System.Drawing.Point(6, 20);
             this.btn_InnoNameThread_Start.Name = "btn_InnoNameThread_Start";
-            this.btn_InnoNameThread_Start.NormalBackColor = System.Drawing.Color.White;
-            this.btn_InnoNameThread_Start.NormalForeColor = System.Drawing.Color.IndianRed;
             this.btn_InnoNameThread_Start.Size = new System.Drawing.Size(110, 40);
             this.btn_InnoNameThread_Start.TabIndex = 0;
             this.btn_InnoNameThread_Start.Text = "_Start";
@@ -392,42 +484,6 @@
             this.lbLog.Name = "lbLog";
             this.lbLog.Size = new System.Drawing.Size(776, 154);
             this.lbLog.TabIndex = 16;
-            // 
-            // btnInnoThreadCallback_Pause
-            // 
-            this.btnInnoThreadCallback_Pause.BackColor = System.Drawing.Color.White;
-            this.btnInnoThreadCallback_Pause.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
-            this.btnInnoThreadCallback_Pause.Checked = false;
-            this.btnInnoThreadCallback_Pause.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoThreadCallback_Pause.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnInnoThreadCallback_Pause.ForeColor = System.Drawing.Color.Black;
-            this.btnInnoThreadCallback_Pause.Location = new System.Drawing.Point(122, 20);
-            this.btnInnoThreadCallback_Pause.Name = "btnInnoThreadCallback_Pause";
-            this.btnInnoThreadCallback_Pause.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoThreadCallback_Pause.NormalForeColor = System.Drawing.Color.Black;
-            this.btnInnoThreadCallback_Pause.Size = new System.Drawing.Size(110, 40);
-            this.btnInnoThreadCallback_Pause.TabIndex = 0;
-            this.btnInnoThreadCallback_Pause.Text = "Pause";
-            this.btnInnoThreadCallback_Pause.UseVisualStyleBackColor = false;
-            this.btnInnoThreadCallback_Pause.Click += new System.EventHandler(this.btnInnoThreadCallback_Pause_Click);
-            // 
-            // btnInnoThreadCallback_Resume
-            // 
-            this.btnInnoThreadCallback_Resume.BackColor = System.Drawing.Color.White;
-            this.btnInnoThreadCallback_Resume.ButtonType = _INNO._UI.InnoButton.ButtonTypes.Button;
-            this.btnInnoThreadCallback_Resume.Checked = false;
-            this.btnInnoThreadCallback_Resume.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInnoThreadCallback_Resume.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnInnoThreadCallback_Resume.ForeColor = System.Drawing.Color.Black;
-            this.btnInnoThreadCallback_Resume.Location = new System.Drawing.Point(122, 66);
-            this.btnInnoThreadCallback_Resume.Name = "btnInnoThreadCallback_Resume";
-            this.btnInnoThreadCallback_Resume.NormalBackColor = System.Drawing.Color.White;
-            this.btnInnoThreadCallback_Resume.NormalForeColor = System.Drawing.Color.Black;
-            this.btnInnoThreadCallback_Resume.Size = new System.Drawing.Size(110, 40);
-            this.btnInnoThreadCallback_Resume.TabIndex = 4;
-            this.btnInnoThreadCallback_Resume.Text = "Resume";
-            this.btnInnoThreadCallback_Resume.UseVisualStyleBackColor = false;
-            this.btnInnoThreadCallback_Resume.Click += new System.EventHandler(this.btnInnoThreadCallback_Resume_Click);
             // 
             // Form_14_Thread
             // 

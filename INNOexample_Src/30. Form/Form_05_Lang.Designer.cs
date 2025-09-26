@@ -43,7 +43,7 @@
             // 
             // groupLang
             // 
-            this.groupLang.BorderColor = System.Drawing.Color.Black;
+            this.groupLang.BorderColor_Normal = System.Drawing.Color.Black;
             this.groupLang.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Dotted;
             this.groupLang.BorderWidth = 2;
             this.groupLang.Controls.Add(this.btnLangEn);
@@ -60,13 +60,13 @@
             this.btnLangEn.BackColor = System.Drawing.Color.White;
             this.btnLangEn.ButtonType = _INNO._UI.InnoButton.ButtonTypes.RadioButton;
             this.btnLangEn.Checked = false;
-            this.btnLangEn.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnLangEn.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLangEn.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnLangEn.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
             this.btnLangEn.ForeColor = System.Drawing.Color.Black;
             this.btnLangEn.Location = new System.Drawing.Point(25, 76);
             this.btnLangEn.Name = "btnLangEn";
-            this.btnLangEn.NormalBackColor = System.Drawing.Color.White;
-            this.btnLangEn.NormalForeColor = System.Drawing.Color.Black;
+            this.btnLangEn.BackColor_Normal = System.Drawing.Color.White;
+            this.btnLangEn.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnLangEn.Size = new System.Drawing.Size(110, 40);
             this.btnLangEn.TabIndex = 0;
             this.btnLangEn.Text = "en (English)";
@@ -78,13 +78,13 @@
             this.btnLangDefault.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnLangDefault.ButtonType = _INNO._UI.InnoButton.ButtonTypes.RadioButton;
             this.btnLangDefault.Checked = true;
-            this.btnLangDefault.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btnLangDefault.CheckedForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLangDefault.BackColor_Checked = System.Drawing.Color.DodgerBlue;
+            this.btnLangDefault.ForeColor_Checked = System.Drawing.Color.WhiteSmoke;
             this.btnLangDefault.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnLangDefault.Location = new System.Drawing.Point(25, 30);
             this.btnLangDefault.Name = "btnLangDefault";
-            this.btnLangDefault.NormalBackColor = System.Drawing.Color.White;
-            this.btnLangDefault.NormalForeColor = System.Drawing.Color.Black;
+            this.btnLangDefault.BackColor_Normal = System.Drawing.Color.White;
+            this.btnLangDefault.ForeColor_Normal = System.Drawing.Color.Black;
             this.btnLangDefault.Size = new System.Drawing.Size(110, 40);
             this.btnLangDefault.TabIndex = 0;
             this.btnLangDefault.Text = "default (Korean)";
