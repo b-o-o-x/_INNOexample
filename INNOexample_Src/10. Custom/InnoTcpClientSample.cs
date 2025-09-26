@@ -24,6 +24,7 @@
 using _INNO._Data;
 using _INNO._Net;
 using System;
+using System.Diagnostics;
 
 namespace _Custom
 {
@@ -180,6 +181,7 @@ namespace _Custom
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.ToString());
             }
         }
 
@@ -219,6 +221,7 @@ namespace _Custom
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.ToString());
             }
         }
     }

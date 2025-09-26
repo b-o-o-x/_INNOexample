@@ -23,6 +23,7 @@ using _INNO;
 using _INNO._Dev;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -158,6 +159,7 @@ namespace _Device
                 }
                 catch (Exception ex)
                 {
+                    Debug.WriteLine(ex.ToString());
                 }
             }
         }
