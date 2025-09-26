@@ -63,11 +63,14 @@ namespace _Custom
 
         private void OnMouseClick(object sender, MouseEventArgs e)
         {
-            ShapeObject so = FindShapeObject(e.Location);// GetShapeObject(i);
-            if (so != null)
+            if (e.Button == MouseButtons.Left)
             {
-                if (IsOn(so.name)) Off(so.name);
-                else On(so.name);
+                ShapeObject so = FindShapeObject(e.Location);// GetShapeObject(i);
+                if (so != null)
+                {
+                    if (IsOn(so.name)) Off(so.name);
+                    else On(so.name);
+                }
             }
         }
 
