@@ -24,7 +24,7 @@ namespace _INNO._Net
             StopServer();
         }
 
-        public bool IsRunning()
+        public new bool IsRunning()
         {
             return IsServerRunning();
         }

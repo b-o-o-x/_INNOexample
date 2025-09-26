@@ -34,7 +34,7 @@ namespace _INNO._Net
             StopClient();
         }
 
-        public bool IsRunning()
+        public new bool IsRunning()
         {
             return IsClientRunning();
         }
@@ -71,7 +71,7 @@ namespace _INNO._Net
         protected override void OnReadQueueProcess(object sender, EventArgs e)
         {
             object objData = null;
-            string strData = "";
+            //string strData = "";
 
             try
             {

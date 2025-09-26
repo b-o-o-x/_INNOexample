@@ -33,7 +33,7 @@ namespace _INNO._Net
             StopClient();
         }
 
-        public bool IsRunning()
+        public new bool IsRunning()
         {
             return IsClientRunning();
         }
